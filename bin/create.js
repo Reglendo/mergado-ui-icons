@@ -2,6 +2,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 var camelcase = require('camelcase');
 var capitalize = require('capitalize');
+var native = require('css-to-react-native');
 var components = {};
 var types = {};
 var _ = require('underscore');
@@ -27,7 +28,8 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
         var id = path.basename(iconPath, '.svg');
         var svg = fs.readFileSync(iconPath, 'utf-8');
         $ = cheerio.load(svg,{
-            xmlMode: true
+            xmlMode: false,
+            decodeEntities: true
         });
         var $svg = $('svg');
         cleanAtrributes($svg, $);
@@ -42,9 +44,18 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
             types[folder] = {};
         }
         types[folder][name] = location;
+        
+        iconSvg = iconSvg.replace(/\n/g,'').replace(/\r/g,'').replace(/(style\=\")(.*)\"/g,function(str,match,style) {
+
+                var style = style.split(';').map(function(obj) {
+                    return obj.split(':')
+                });
+
+                return "style={"+JSON.stringify(native.default(style))+"}"
+        })
+        
         var component = `
 import * as React from "react"
-
 export const ${name}: JSX.Element = 
         <g>${iconSvg}</g>;
 `
@@ -62,8 +73,6 @@ export const ${name}: JSX.Element =
         fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
         console.log(path.join(rootDir, '/index.tsx'));
     });
-    // console.log("IconBase.js");
-
 });
 
 
