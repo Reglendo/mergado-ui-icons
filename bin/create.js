@@ -35,7 +35,7 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
         var viewBox = $svg.attr('viewBox');
         var folder = iconPath.replace(path.join(rootDir, 'icons') + '/', '').replace( '/' + path.basename(iconPath), '');
         var type = capitalize(camelcase(folder));
-        var name = type + capitalize(camelcase(id));
+        var name = 'Icon' + capitalize(camelcase(id));
         var location = iconPath.replace(path.join(rootDir, 'icons'), '').replace('.svg', '.tsx');
         components[name] = location;
         if (!types[folder]) {
@@ -51,6 +51,18 @@ export const ${name}: JSX.Element =
         fs.writeFileSync(path.join(rootDir, 'export/', location.replace(folder,'tsx')), component, 'utf-8');
         console.log(path.join(rootDir, 'export/',  location.replace(folder,'tsx')));
     });
+     _.each(types, function(components, folder) {
+        var iconsModule = _.map(components, function(loc, name){
+            loc = loc.replace('.js', '');
+            loc = loc.replace('/'+folder, '/export/tsx');
+            loc = "." + loc;
+            return `export ${name} from '${loc}';`;
+        }).join('\n') + '\n';
+                
+        fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
+        console.log(path.join(rootDir, '/index.tsx'));
+    });
+    // console.log("IconBase.js");
 
 });
 
