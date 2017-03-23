@@ -56,7 +56,7 @@ export const ${name}: JSX.Element =
             loc = loc.replace('.js', '');
             loc = loc.replace('/'+folder, '/export/tsx');
             loc = "." + loc;
-            return `export ${name} from '${loc}';`;
+            return `export { ${name} } from '${loc.replace(".tsx","")}';`;
         }).join('\n') + '\n';
                 
         fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');

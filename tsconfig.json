@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+	"baseUrl": "./",
+	"module": "commonjs",
+        "noImplicitAny": true,
+        "target": "es5",
+        "jsx": "react",
+        "outDir": "./lib",
+        "sourceMap": true,
+	"allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "export/",
+	"./"
+    ]
+}
