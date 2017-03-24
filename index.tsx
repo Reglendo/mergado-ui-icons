@@ -225,6 +225,7 @@ export { IconFastBackward } from './export/tsx/fast-backward';
 export { IconFastForward } from './export/tsx/fast-forward';
 export { IconFax } from './export/tsx/fax';
 export { IconFeed } from './export/tsx/feed';
+export { IconFeedimageeditor } from './export/tsx/feedimageeditor';
 export { IconFemale } from './export/tsx/female';
 export { IconFighterJet } from './export/tsx/fighter-jet';
 export { IconFileArchiveO } from './export/tsx/file-archive-o';

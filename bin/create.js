@@ -30,7 +30,8 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
         $ = cheerio.load(svg,{
             xmlMode: false,
             decodeEntities: true
-        });
+        }); 
+        
         var $svg = $('svg');
         cleanAtrributes($svg, $);
         var iconSvg = $svg.html();
@@ -44,8 +45,8 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
             types[folder] = {};
         }
         types[folder][name] = location;
-        
-        iconSvg = iconSvg.replace(/\n/g,'').replace(/\r/g,'').replace(/(style\=\")(.*)\"/g,function(str,match,style) {
+                
+        iconSvg = iconSvg.replace(/\n/g,'').replace(/\r/g,'').replace(/(style\=\")(.*?)\"/g,function(str,match,style) {
 
                 var style = style.split(';').map(function(obj) {
                     return obj.split(':')
@@ -53,7 +54,9 @@ glob(rootDir + '/icons/*/*.svg', function(err, icons) {
 
                 return "style={"+JSON.stringify(native.default(style))+"}"
         })
-        
+
+        iconSvg = iconSvg.match(/(<(g|path).*<\/(g|path)>)/g)[0].replace(/inkscape\:.*?\".*?\"/g,'')
+                
         var component = `
 import * as React from "react"
 export const ${name}: JSX.Element = 
