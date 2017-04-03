@@ -23,7 +23,7 @@ var cleanAtrributes = function($el, $) {
     });
 };
 
-glob(rootDir + '/icons/*/*.svg', function(err, icons) {
+glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
     icons.forEach(function(iconPath){
         var id = path.basename(iconPath, '.svg');
         var svg = fs.readFileSync(iconPath, 'utf-8');
@@ -62,13 +62,18 @@ import * as React from "react"
 export const ${name}: JSX.Element = 
         <g>${iconSvg}</g>;
 `
-        fs.writeFileSync(path.join(rootDir, 'export/', location.replace(folder,'tsx')), component, 'utf-8');
-        console.log(path.join(rootDir, 'export/',  location.replace(folder,'tsx')));
+        var destination = path.join(rootDir, 'export/icons/', id.replace('.tsx',''))
+
+        if (!fs.existsSync(destination)){
+            fs.mkdirSync(destination);
+        }
+        fs.writeFileSync(path.join(destination,'/index.tsx'), component, 'utf-8');
+        console.log(path.join(destination,'/index.tsx'));
     });
      _.each(types, function(components, folder) {
         var iconsModule = _.map(components, function(loc, name){
             loc = loc.replace('.js', '');
-            loc = loc.replace('/'+folder, '/export/tsx');
+            loc = loc.replace(folder, '/export/icons');
             loc = "." + loc;
             return `export { ${name} } from '${loc.replace(".tsx","")}';`;
         }).join('\n') + '\n';

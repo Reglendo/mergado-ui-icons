@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Typescript exports of fontawesome icons",
   "scripts": {
-    "build": "node ./bin/create && tsc -d"
+    "build": "node ./bin/create && tsc -d",
+    "create": "node ./bin/create"
   },
   "repository": {
     "type": "git",
