@@ -62,25 +62,25 @@ import * as React from "react"
 export const ${name}: JSX.Element = 
         <g>${iconSvg}</g>;
 `
-        var destination = path.join(rootDir, 'export/icons/', id.replace('.tsx',''))
+        var destination = path.join(rootDir, 'export/icons/', location.replace(folder,''))
 
-        if (!fs.existsSync(destination)){
-            fs.mkdirSync(destination);
+        if (!fs.existsSync(path.join(rootDir, 'export/icons/'))){
+            fs.mkdirSync(path.join(rootDir, 'export/icons/'));
         }
-        fs.writeFileSync(path.join(destination,'/index.tsx'), component, 'utf-8');
-        console.log(path.join(destination,'/index.tsx'));
+        fs.writeFileSync(path.join(destination), component, 'utf-8');
+        console.log(destination)
     });
-     _.each(types, function(components, folder) {
-        var iconsModule = _.map(components, function(loc, name){
-            loc = loc.replace('.js', '');
-            loc = loc.replace(folder, '/export/icons');
-            loc = "." + loc;
-            return `export { ${name} } from '${loc.replace(".tsx","")}';`;
-        }).join('\n') + '\n';
-                
-        fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
-        console.log(path.join(rootDir, '/index.tsx'));
-    });
+    //  _.each(types, function(components, folder) {
+    //     var iconsModule = _.map(components, function(loc, name){
+    //         loc = loc.replace('.js', '');
+    //         loc = loc.replace(folder, '/export/icons');
+    //         loc = "." + loc;
+    //         return `export { ${name} } from '${loc.replace(".tsx","")}';`;
+    //     }).join('\n') + '\n';
+    //             
+    //     fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
+    //     console.log(path.join(rootDir, '/index.tsx'));
+    // });
 });
 
 
