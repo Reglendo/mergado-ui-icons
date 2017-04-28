@@ -1,8 +1,6 @@
 /// <reference types="react" />
 import * as React from "react";
 export interface Props {
-    /** Icon type */
-    type: string;
     /** Size */
     size?: number;
     /** Icon text */

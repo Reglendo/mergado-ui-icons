@@ -3,8 +3,6 @@
 import * as React from "react"
 
 export interface Props {
-    /** Icon type */
-    type: string
     /** Size */
     size?: number
     /** Icon text */
@@ -21,13 +19,12 @@ class IconBlind extends React.Component<Props, State> {
     readonly name = "muk-icon";
 
     public static defaultProps: Props = {
-        type: "reglendo",
         size: 15,
         style: {}
     }
 
     render() {
-        let className = `${this.name} ${this.name}--${this.props.type}`
+        let className = `${this.name} ${this.name}--blind`
 
         return (
             <span className={className} style={this.props.style}>
