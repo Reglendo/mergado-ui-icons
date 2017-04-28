@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPercent: JSX.Element;
+import * as React from "react";
+declare class IconPercent extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPercent;

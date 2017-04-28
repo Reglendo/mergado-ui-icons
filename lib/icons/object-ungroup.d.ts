@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconObjectUngroup: JSX.Element;
+import * as React from "react";
+declare class IconObjectUngroup extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconObjectUngroup;

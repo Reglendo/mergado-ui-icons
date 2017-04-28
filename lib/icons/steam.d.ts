@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSteam: JSX.Element;
+import * as React from "react";
+declare class IconSteam extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSteam;

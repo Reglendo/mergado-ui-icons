@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCodiepie: JSX.Element;
+import * as React from "react";
+declare class IconCodiepie extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCodiepie;

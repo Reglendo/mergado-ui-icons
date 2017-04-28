@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWifi: JSX.Element;
+import * as React from "react";
+declare class IconWifi extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWifi;

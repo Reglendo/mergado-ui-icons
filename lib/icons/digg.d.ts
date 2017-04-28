@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconDigg: JSX.Element;
+import * as React from "react";
+declare class IconDigg extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconDigg;

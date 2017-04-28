@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconDashcube: JSX.Element;
+import * as React from "react";
+declare class IconDashcube extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconDashcube;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconArrowsAlt: JSX.Element;
+import * as React from "react";
+declare class IconArrowsAlt extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconArrowsAlt;

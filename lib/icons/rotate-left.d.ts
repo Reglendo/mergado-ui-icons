@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconRotateLeft: JSX.Element;
+import * as React from "react";
+declare class IconRotateLeft extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconRotateLeft;

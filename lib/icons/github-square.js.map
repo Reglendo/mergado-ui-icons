@@ -1,1 +1,1 @@
-{"version":3,"file":"github-square.js","sourceRoot":"","sources":["../../icons/github-square.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,gBAAgB,GACrB;IAAG,8BAAM,CAAC,EAAC,6pCAA6pC,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"github-square.js","sourceRoot":"","sources":["../../icons/github-square.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA+B,oCAAuB;IAAtD;;IAIA,CAAC;IAHC,iCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,6pCAA6pC,GAAQ,CAAI,CAAC;IAC9rC,CAAC;IACH,uBAAC;AAAD,CAAC,AAJD,CAA+B,KAAK,CAAC,SAAS,GAI7C;AACD,kBAAe,gBAAgB,CAAA"}

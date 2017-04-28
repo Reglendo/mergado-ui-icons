@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHourglassO: JSX.Element;
+import * as React from "react";
+declare class IconHourglassO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHourglassO;

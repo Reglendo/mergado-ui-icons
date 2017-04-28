@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGitlab: JSX.Element;
+import * as React from "react";
+declare class IconGitlab extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGitlab;

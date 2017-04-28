@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFacebookSquare: JSX.Element;
+import * as React from "react";
+declare class IconFacebookSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFacebookSquare;

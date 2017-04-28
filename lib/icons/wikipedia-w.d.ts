@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWikipediaW: JSX.Element;
+import * as React from "react";
+declare class IconWikipediaW extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWikipediaW;

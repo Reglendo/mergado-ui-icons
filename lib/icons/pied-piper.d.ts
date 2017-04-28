@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPiedPiper: JSX.Element;
+import * as React from "react";
+declare class IconPiedPiper extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPiedPiper;

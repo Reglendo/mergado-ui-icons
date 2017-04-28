@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconShield: JSX.Element;
+import * as React from "react";
+declare class IconShield extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconShield;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconVideoCamera: JSX.Element;
+import * as React from "react";
+declare class IconVideoCamera extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconVideoCamera;

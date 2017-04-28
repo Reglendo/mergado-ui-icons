@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconUmbrella: JSX.Element;
+import * as React from "react";
+declare class IconUmbrella extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconUmbrella;

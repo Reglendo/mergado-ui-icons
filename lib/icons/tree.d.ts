@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconTree: JSX.Element;
+import * as React from "react";
+declare class IconTree extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconTree;

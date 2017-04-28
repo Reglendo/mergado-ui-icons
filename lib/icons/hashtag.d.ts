@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHashtag: JSX.Element;
+import * as React from "react";
+declare class IconHashtag extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHashtag;

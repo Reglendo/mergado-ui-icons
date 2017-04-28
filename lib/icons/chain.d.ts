@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconChain: JSX.Element;
+import * as React from "react";
+declare class IconChain extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconChain;

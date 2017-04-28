@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGoogleWallet: JSX.Element;
+import * as React from "react";
+declare class IconGoogleWallet extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGoogleWallet;

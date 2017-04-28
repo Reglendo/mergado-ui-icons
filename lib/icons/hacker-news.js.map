@@ -1,1 +1,1 @@
-{"version":3,"file":"hacker-news.js","sourceRoot":"","sources":["../../icons/hacker-news.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,cAAc,GACnB;IAAG,8BAAM,CAAC,EAAC,0NAA0N,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"hacker-news.js","sourceRoot":"","sources":["../../icons/hacker-news.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA6B,kCAAuB;IAApD;;IAIA,CAAC;IAHC,+BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,0NAA0N,GAAQ,CAAI,CAAC;IAC3P,CAAC;IACH,qBAAC;AAAD,CAAC,AAJD,CAA6B,KAAK,CAAC,SAAS,GAI3C;AACD,kBAAe,cAAc,CAAA"}

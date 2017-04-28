@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFilter: JSX.Element;
+import * as React from "react";
+declare class IconFilter extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFilter;

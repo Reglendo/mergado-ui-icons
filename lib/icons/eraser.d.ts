@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconEraser: JSX.Element;
+import * as React from "react";
+declare class IconEraser extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconEraser;

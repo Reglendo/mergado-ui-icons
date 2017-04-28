@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWhatsapp: JSX.Element;
+import * as React from "react";
+declare class IconWhatsapp extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWhatsapp;

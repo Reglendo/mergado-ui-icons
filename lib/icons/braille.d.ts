@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBraille: JSX.Element;
+import * as React from "react";
+declare class IconBraille extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBraille;

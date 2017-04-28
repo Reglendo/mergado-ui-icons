@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBarChart: JSX.Element;
+import * as React from "react";
+declare class IconBarChart extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBarChart;

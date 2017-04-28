@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconStumbleupon: JSX.Element;
+import * as React from "react";
+declare class IconStumbleupon extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconStumbleupon;

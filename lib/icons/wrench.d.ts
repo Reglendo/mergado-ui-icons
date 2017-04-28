@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWrench: JSX.Element;
+import * as React from "react";
+declare class IconWrench extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWrench;

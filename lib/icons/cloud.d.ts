@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCloud: JSX.Element;
+import * as React from "react";
+declare class IconCloud extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCloud;

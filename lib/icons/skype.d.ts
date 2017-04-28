@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSkype: JSX.Element;
+import * as React from "react";
+declare class IconSkype extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSkype;

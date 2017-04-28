@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconExternalLinkSquare: JSX.Element;
+import * as React from "react";
+declare class IconExternalLinkSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconExternalLinkSquare;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconJoomla: JSX.Element;
+import * as React from "react";
+declare class IconJoomla extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconJoomla;

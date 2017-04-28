@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconDownload: JSX.Element;
+import * as React from "react";
+declare class IconDownload extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconDownload;

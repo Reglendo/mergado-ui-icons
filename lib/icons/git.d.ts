@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGit: JSX.Element;
+import * as React from "react";
+declare class IconGit extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGit;

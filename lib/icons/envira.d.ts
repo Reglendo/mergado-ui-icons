@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconEnvira: JSX.Element;
+import * as React from "react";
+declare class IconEnvira extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconEnvira;

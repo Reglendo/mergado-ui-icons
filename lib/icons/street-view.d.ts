@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconStreetView: JSX.Element;
+import * as React from "react";
+declare class IconStreetView extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconStreetView;

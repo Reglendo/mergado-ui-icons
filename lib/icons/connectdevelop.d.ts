@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconConnectdevelop: JSX.Element;
+import * as React from "react";
+declare class IconConnectdevelop extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconConnectdevelop;

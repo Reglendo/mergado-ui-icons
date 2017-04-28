@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSignIn: JSX.Element;
+import * as React from "react";
+declare class IconSignIn extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSignIn;

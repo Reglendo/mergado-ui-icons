@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSoundcloud: JSX.Element;
+import * as React from "react";
+declare class IconSoundcloud extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSoundcloud;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWeibo: JSX.Element;
+import * as React from "react";
+declare class IconWeibo extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWeibo;

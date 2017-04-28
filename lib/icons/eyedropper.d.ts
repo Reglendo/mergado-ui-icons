@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconEyedropper: JSX.Element;
+import * as React from "react";
+declare class IconEyedropper extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconEyedropper;

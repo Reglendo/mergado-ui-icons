@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCheckCircleO: JSX.Element;
+import * as React from "react";
+declare class IconCheckCircleO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCheckCircleO;

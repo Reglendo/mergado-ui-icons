@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCloudUpload: JSX.Element;
+import * as React from "react";
+declare class IconCloudUpload extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCloudUpload;

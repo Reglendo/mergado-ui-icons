@@ -1,1 +1,1 @@
-{"version":3,"file":"fort-awesome.js","sourceRoot":"","sources":["../../icons/fort-awesome.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,eAAe,GACpB;IAAG,8BAAM,CAAC,EAAC,ypBAAypB,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"fort-awesome.js","sourceRoot":"","sources":["../../icons/fort-awesome.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA8B,mCAAuB;IAArD;;IAIA,CAAC;IAHC,gCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,ypBAAypB,GAAQ,CAAI,CAAC;IAC1rB,CAAC;IACH,sBAAC;AAAD,CAAC,AAJD,CAA8B,KAAK,CAAC,SAAS,GAI5C;AACD,kBAAe,eAAe,CAAA"}

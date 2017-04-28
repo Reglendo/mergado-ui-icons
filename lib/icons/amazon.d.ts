@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconAmazon: JSX.Element;
+import * as React from "react";
+declare class IconAmazon extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconAmazon;

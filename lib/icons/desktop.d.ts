@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconDesktop: JSX.Element;
+import * as React from "react";
+declare class IconDesktop extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconDesktop;

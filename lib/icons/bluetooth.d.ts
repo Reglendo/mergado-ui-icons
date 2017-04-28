@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBluetooth: JSX.Element;
+import * as React from "react";
+declare class IconBluetooth extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBluetooth;

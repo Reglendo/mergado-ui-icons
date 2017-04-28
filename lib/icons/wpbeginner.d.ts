@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWpbeginner: JSX.Element;
+import * as React from "react";
+declare class IconWpbeginner extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWpbeginner;

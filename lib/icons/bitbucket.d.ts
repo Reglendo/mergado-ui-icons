@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBitbucket: JSX.Element;
+import * as React from "react";
+declare class IconBitbucket extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBitbucket;

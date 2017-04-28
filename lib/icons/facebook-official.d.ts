@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFacebookOfficial: JSX.Element;
+import * as React from "react";
+declare class IconFacebookOfficial extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFacebookOfficial;

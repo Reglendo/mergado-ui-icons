@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconStepForward: JSX.Element;
+import * as React from "react";
+declare class IconStepForward extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconStepForward;

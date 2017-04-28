@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconDelicious: JSX.Element;
+import * as React from "react";
+declare class IconDelicious extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconDelicious;

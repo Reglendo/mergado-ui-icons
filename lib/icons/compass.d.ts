@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCompass: JSX.Element;
+import * as React from "react";
+declare class IconCompass extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCompass;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBalanceScale: JSX.Element;
+import * as React from "react";
+declare class IconBalanceScale extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBalanceScale;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconChevronCircleRight: JSX.Element;
+import * as React from "react";
+declare class IconChevronCircleRight extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconChevronCircleRight;

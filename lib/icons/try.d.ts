@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconTry: JSX.Element;
+import * as React from "react";
+declare class IconTry extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconTry;

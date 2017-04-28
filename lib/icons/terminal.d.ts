@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconTerminal: JSX.Element;
+import * as React from "react";
+declare class IconTerminal extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconTerminal;

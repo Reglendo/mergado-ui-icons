@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconMedkit: JSX.Element;
+import * as React from "react";
+declare class IconMedkit extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconMedkit;

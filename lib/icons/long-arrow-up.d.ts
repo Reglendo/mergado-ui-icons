@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLongArrowUp: JSX.Element;
+import * as React from "react";
+declare class IconLongArrowUp extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLongArrowUp;

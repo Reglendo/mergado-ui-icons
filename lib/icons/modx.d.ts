@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconModx: JSX.Element;
+import * as React from "react";
+declare class IconModx extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconModx;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconMagic: JSX.Element;
+import * as React from "react";
+declare class IconMagic extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconMagic;

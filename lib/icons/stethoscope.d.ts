@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconStethoscope: JSX.Element;
+import * as React from "react";
+declare class IconStethoscope extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconStethoscope;

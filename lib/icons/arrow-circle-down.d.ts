@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconArrowCircleDown: JSX.Element;
+import * as React from "react";
+declare class IconArrowCircleDown extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconArrowCircleDown;

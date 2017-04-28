@@ -1,1 +1,1 @@
-{"version":3,"file":"recycle.js","sourceRoot":"","sources":["../../icons/recycle.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,WAAW,GAChB;IAAG,8BAAM,CAAC,EAAC,8wBAA8wB,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"recycle.js","sourceRoot":"","sources":["../../icons/recycle.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA0B,+BAAuB;IAAjD;;IAIA,CAAC;IAHC,4BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,8wBAA8wB,GAAQ,CAAI,CAAC;IAC/yB,CAAC;IACH,kBAAC;AAAD,CAAC,AAJD,CAA0B,KAAK,CAAC,SAAS,GAIxC;AACD,kBAAe,WAAW,CAAA"}

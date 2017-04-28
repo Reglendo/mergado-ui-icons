@@ -1,1 +1,1 @@
-{"version":3,"file":"cart-arrow-down.js","sourceRoot":"","sources":["../../icons/cart-arrow-down.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,iBAAiB,GACtB;IAAG,8BAAM,CAAC,EAAC,8mBAA8mB,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"cart-arrow-down.js","sourceRoot":"","sources":["../../icons/cart-arrow-down.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAgC,qCAAuB;IAAvD;;IAIA,CAAC;IAHC,kCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,8mBAA8mB,GAAQ,CAAI,CAAC;IAC/oB,CAAC;IACH,wBAAC;AAAD,CAAC,AAJD,CAAgC,KAAK,CAAC,SAAS,GAI9C;AACD,kBAAe,iBAAiB,CAAA"}

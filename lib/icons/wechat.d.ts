@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconWechat: JSX.Element;
+import * as React from "react";
+declare class IconWechat extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconWechat;

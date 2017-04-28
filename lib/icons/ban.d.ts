@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBan: JSX.Element;
+import * as React from "react";
+declare class IconBan extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBan;

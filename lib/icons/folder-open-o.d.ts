@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFolderOpenO: JSX.Element;
+import * as React from "react";
+declare class IconFolderOpenO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFolderOpenO;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPaypal: JSX.Element;
+import * as React from "react";
+declare class IconPaypal extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPaypal;

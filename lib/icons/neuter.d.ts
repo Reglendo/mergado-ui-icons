@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconNeuter: JSX.Element;
+import * as React from "react";
+declare class IconNeuter extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconNeuter;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCrosshairs: JSX.Element;
+import * as React from "react";
+declare class IconCrosshairs extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCrosshairs;

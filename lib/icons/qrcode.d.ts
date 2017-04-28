@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconQrcode: JSX.Element;
+import * as React from "react";
+declare class IconQrcode extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconQrcode;

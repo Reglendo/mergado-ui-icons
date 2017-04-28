@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHandODown: JSX.Element;
+import * as React from "react";
+declare class IconHandODown extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHandODown;

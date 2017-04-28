@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGetPocket: JSX.Element;
+import * as React from "react";
+declare class IconGetPocket extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGetPocket;

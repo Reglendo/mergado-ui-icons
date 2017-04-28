@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLemonO: JSX.Element;
+import * as React from "react";
+declare class IconLemonO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLemonO;

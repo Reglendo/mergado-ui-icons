@@ -1,1 +1,1 @@
-{"version":3,"file":"motorcycle.js","sourceRoot":"","sources":["../../icons/motorcycle.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,cAAc,GACnB;IAAG,8BAAM,CAAC,EAAC,m2BAAm2B,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"motorcycle.js","sourceRoot":"","sources":["../../icons/motorcycle.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA6B,kCAAuB;IAApD;;IAIA,CAAC;IAHC,+BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,m2BAAm2B,GAAQ,CAAI,CAAC;IACp4B,CAAC;IACH,qBAAC;AAAD,CAAC,AAJD,CAA6B,KAAK,CAAC,SAAS,GAI3C;AACD,kBAAe,cAAc,CAAA"}

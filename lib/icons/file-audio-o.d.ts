@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFileAudioO: JSX.Element;
+import * as React from "react";
+declare class IconFileAudioO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFileAudioO;

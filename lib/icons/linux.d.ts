@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLinux: JSX.Element;
+import * as React from "react";
+declare class IconLinux extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLinux;

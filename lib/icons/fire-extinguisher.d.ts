@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFireExtinguisher: JSX.Element;
+import * as React from "react";
+declare class IconFireExtinguisher extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFireExtinguisher;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconUnderline: JSX.Element;
+import * as React from "react";
+declare class IconUnderline extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconUnderline;

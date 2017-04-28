@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBattery4: JSX.Element;
+import * as React from "react";
+declare class IconBattery4 extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBattery4;

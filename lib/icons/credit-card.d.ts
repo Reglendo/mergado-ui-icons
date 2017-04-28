@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCreditCard: JSX.Element;
+import * as React from "react";
+declare class IconCreditCard extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCreditCard;

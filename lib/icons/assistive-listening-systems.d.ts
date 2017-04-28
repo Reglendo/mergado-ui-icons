@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconAssistiveListeningSystems: JSX.Element;
+import * as React from "react";
+declare class IconAssistiveListeningSystems extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconAssistiveListeningSystems;

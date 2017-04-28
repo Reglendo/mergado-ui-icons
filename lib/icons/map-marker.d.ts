@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconMapMarker: JSX.Element;
+import * as React from "react";
+declare class IconMapMarker extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconMapMarker;

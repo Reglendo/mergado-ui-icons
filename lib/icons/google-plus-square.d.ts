@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGooglePlusSquare: JSX.Element;
+import * as React from "react";
+declare class IconGooglePlusSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGooglePlusSquare;

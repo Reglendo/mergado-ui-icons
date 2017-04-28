@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconTripadvisor: JSX.Element;
+import * as React from "react";
+declare class IconTripadvisor extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconTripadvisor;

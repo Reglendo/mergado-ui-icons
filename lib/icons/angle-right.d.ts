@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconAngleRight: JSX.Element;
+import * as React from "react";
+declare class IconAngleRight extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconAngleRight;

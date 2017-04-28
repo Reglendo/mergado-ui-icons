@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSortNumericAsc: JSX.Element;
+import * as React from "react";
+declare class IconSortNumericAsc extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSortNumericAsc;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSearchMinus: JSX.Element;
+import * as React from "react";
+declare class IconSearchMinus extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSearchMinus;

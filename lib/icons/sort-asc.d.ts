@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSortAsc: JSX.Element;
+import * as React from "react";
+declare class IconSortAsc extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSortAsc;

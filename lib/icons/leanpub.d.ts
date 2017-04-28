@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLeanpub: JSX.Element;
+import * as React from "react";
+declare class IconLeanpub extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLeanpub;

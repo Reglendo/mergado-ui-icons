@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconTransgenderAlt: JSX.Element;
+import * as React from "react";
+declare class IconTransgenderAlt extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconTransgenderAlt;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBarcode: JSX.Element;
+import * as React from "react";
+declare class IconBarcode extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBarcode;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLeaf: JSX.Element;
+import * as React from "react";
+declare class IconLeaf extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLeaf;

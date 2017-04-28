@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFilePowerpointO: JSX.Element;
+import * as React from "react";
+declare class IconFilePowerpointO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFilePowerpointO;

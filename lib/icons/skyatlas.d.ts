@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSkyatlas: JSX.Element;
+import * as React from "react";
+declare class IconSkyatlas extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSkyatlas;

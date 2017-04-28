@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCaretSquareOLeft: JSX.Element;
+import * as React from "react";
+declare class IconCaretSquareOLeft extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCaretSquareOLeft;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPhone: JSX.Element;
+import * as React from "react";
+declare class IconPhone extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPhone;

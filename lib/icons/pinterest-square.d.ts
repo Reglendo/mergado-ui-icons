@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPinterestSquare: JSX.Element;
+import * as React from "react";
+declare class IconPinterestSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPinterestSquare;

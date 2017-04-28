@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconAmericanSignLanguageInterpreting: JSX.Element;
+import * as React from "react";
+declare class IconAmericanSignLanguageInterpreting extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconAmericanSignLanguageInterpreting;

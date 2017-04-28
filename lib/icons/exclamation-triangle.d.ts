@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconExclamationTriangle: JSX.Element;
+import * as React from "react";
+declare class IconExclamationTriangle extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconExclamationTriangle;

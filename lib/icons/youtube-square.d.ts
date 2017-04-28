@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconYoutubeSquare: JSX.Element;
+import * as React from "react";
+declare class IconYoutubeSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconYoutubeSquare;

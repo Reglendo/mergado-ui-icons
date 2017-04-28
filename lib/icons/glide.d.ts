@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGlide: JSX.Element;
+import * as React from "react";
+declare class IconGlide extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGlide;

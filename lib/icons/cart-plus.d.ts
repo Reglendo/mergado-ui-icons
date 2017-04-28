@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCartPlus: JSX.Element;
+import * as React from "react";
+declare class IconCartPlus extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCartPlus;

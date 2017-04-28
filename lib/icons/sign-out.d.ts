@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSignOut: JSX.Element;
+import * as React from "react";
+declare class IconSignOut extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSignOut;

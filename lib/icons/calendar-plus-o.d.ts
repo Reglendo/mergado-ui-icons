@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCalendarPlusO: JSX.Element;
+import * as React from "react";
+declare class IconCalendarPlusO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCalendarPlusO;

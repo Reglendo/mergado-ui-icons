@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBullseye: JSX.Element;
+import * as React from "react";
+declare class IconBullseye extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBullseye;

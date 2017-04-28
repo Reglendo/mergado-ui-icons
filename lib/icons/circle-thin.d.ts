@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCircleThin: JSX.Element;
+import * as React from "react";
+declare class IconCircleThin extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCircleThin;

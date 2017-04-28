@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconRandom: JSX.Element;
+import * as React from "react";
+declare class IconRandom extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconRandom;

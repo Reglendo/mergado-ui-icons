@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconLevelUp: JSX.Element;
+import * as React from "react";
+declare class IconLevelUp extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconLevelUp;

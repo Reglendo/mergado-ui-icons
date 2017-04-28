@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBlackTie: JSX.Element;
+import * as React from "react";
+declare class IconBlackTie extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBlackTie;

@@ -59,9 +59,13 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
                 
         var component = `
 import * as React from "react"
-export const ${name}: JSX.Element = 
-        <g>${iconSvg}</g>;
-`
+class ${name} extends React.Component<{}, {}> {
+  render() {
+    return <g>${iconSvg}</g>;
+  }
+}
+export default ${name}
+            `
         var destination = path.join(rootDir, 'icons/', location.replace(folder,''))
 
         if (!fs.existsSync(path.join(rootDir, 'icons/'))){
@@ -75,7 +79,7 @@ export const ${name}: JSX.Element =
             loc = loc.replace('.js', '');
             loc = loc.replace(folder, '/icons');
             loc = "." + loc;
-            return `export { ${name} } from '${loc.replace(".tsx","")}';`;
+            return `export { default as ${name} } from '${loc.replace(".tsx","")}';`;
         }).join('\n') + '\n';
 
         fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');

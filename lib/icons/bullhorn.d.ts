@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBullhorn: JSX.Element;
+import * as React from "react";
+declare class IconBullhorn extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBullhorn;

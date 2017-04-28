@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGithub: JSX.Element;
+import * as React from "react";
+declare class IconGithub extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGithub;

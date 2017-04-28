@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconOpera: JSX.Element;
+import * as React from "react";
+declare class IconOpera extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconOpera;

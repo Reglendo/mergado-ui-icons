@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconClockO: JSX.Element;
+import * as React from "react";
+declare class IconClockO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconClockO;

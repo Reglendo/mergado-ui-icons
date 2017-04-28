@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHandPointerO: JSX.Element;
+import * as React from "react";
+declare class IconHandPointerO extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHandPointerO;

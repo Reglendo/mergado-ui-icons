@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconYoutubePlay: JSX.Element;
+import * as React from "react";
+declare class IconYoutubePlay extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconYoutubePlay;

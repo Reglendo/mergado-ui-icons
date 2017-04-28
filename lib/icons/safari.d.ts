@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSafari: JSX.Element;
+import * as React from "react";
+declare class IconSafari extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSafari;

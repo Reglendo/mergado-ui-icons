@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconXingSquare: JSX.Element;
+import * as React from "react";
+declare class IconXingSquare extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconXingSquare;

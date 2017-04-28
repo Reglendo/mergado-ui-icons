@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconEnvelope: JSX.Element;
+import * as React from "react";
+declare class IconEnvelope extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconEnvelope;

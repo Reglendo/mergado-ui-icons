@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHistory: JSX.Element;
+import * as React from "react";
+declare class IconHistory extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHistory;

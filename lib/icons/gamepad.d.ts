@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconGamepad: JSX.Element;
+import * as React from "react";
+declare class IconGamepad extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconGamepad;

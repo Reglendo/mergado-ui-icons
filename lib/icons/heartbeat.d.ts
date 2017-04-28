@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconHeartbeat: JSX.Element;
+import * as React from "react";
+declare class IconHeartbeat extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconHeartbeat;

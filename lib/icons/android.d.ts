@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconAndroid: JSX.Element;
+import * as React from "react";
+declare class IconAndroid extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconAndroid;

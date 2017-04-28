@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFileText: JSX.Element;
+import * as React from "react";
+declare class IconFileText extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFileText;

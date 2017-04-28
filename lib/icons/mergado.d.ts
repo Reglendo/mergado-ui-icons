@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconMergado: JSX.Element;
+import * as React from "react";
+declare class IconMergado extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconMergado;

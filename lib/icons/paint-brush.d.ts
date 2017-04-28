@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPaintBrush: JSX.Element;
+import * as React from "react";
+declare class IconPaintBrush extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPaintBrush;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconFlipVertical: JSX.Element;
+import * as React from "react";
+declare class IconFlipVertical extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconFlipVertical;

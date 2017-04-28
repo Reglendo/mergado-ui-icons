@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconBitcoin: JSX.Element;
+import * as React from "react";
+declare class IconBitcoin extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconBitcoin;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCaretDown: JSX.Element;
+import * as React from "react";
+declare class IconCaretDown extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCaretDown;

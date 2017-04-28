@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPaperclip: JSX.Element;
+import * as React from "react";
+declare class IconPaperclip extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPaperclip;

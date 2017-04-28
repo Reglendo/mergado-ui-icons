@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconCcStripe: JSX.Element;
+import * as React from "react";
+declare class IconCcStripe extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconCcStripe;

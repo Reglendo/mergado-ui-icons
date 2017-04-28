@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconYahoo: JSX.Element;
+import * as React from "react";
+declare class IconYahoo extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconYahoo;

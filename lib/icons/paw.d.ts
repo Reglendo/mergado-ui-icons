@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconPaw: JSX.Element;
+import * as React from "react";
+declare class IconPaw extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconPaw;

@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconMixcloud: JSX.Element;
+import * as React from "react";
+declare class IconMixcloud extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconMixcloud;

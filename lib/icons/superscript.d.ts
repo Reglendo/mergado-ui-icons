@@ -1,2 +1,6 @@
 /// <reference types="react" />
-export declare const IconSuperscript: JSX.Element;
+import * as React from "react";
+declare class IconSuperscript extends React.Component<{}, {}> {
+    render(): JSX.Element;
+}
+export default IconSuperscript;
