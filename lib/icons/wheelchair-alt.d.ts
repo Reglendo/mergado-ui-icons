@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconWheelchairAlt extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconWheelchairAlt;
+export declare const IconWheelchairAlt: JSX.Element;

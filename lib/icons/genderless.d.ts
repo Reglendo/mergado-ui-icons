@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconGenderless extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconGenderless;
+export declare const IconGenderless: JSX.Element;

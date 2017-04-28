@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconWordpress extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconWordpress;
+export declare const IconWordpress: JSX.Element;

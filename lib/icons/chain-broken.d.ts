@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconChainBroken extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconChainBroken;
+export declare const IconChainBroken: JSX.Element;

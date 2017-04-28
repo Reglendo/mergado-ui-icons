@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconTumblrSquare extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconTumblrSquare;
+export declare const IconTumblrSquare: JSX.Element;

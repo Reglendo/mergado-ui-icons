@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconToggleOff extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconToggleOff;
+export declare const IconToggleOff: JSX.Element;

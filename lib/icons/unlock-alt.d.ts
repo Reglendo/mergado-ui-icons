@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconUnlockAlt extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconUnlockAlt;
+export declare const IconUnlockAlt: JSX.Element;

@@ -1,1 +1,1 @@
-{"version":3,"file":"universal-access.js","sourceRoot":"","sources":["../../icons/universal-access.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAkC,uCAAuB;IAAzD;;IAIA,CAAC;IAHC,oCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,q2BAAq2B,GAAQ,CAAI,CAAC;IACt4B,CAAC;IACH,0BAAC;AAAD,CAAC,AAJD,CAAkC,KAAK,CAAC,SAAS,GAIhD;AACD,kBAAe,mBAAmB,CAAA"}
+{"version":3,"file":"universal-access.js","sourceRoot":"","sources":["../../icons/universal-access.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,mBAAmB,GACxB;IAAG,8BAAM,CAAC,EAAC,q2BAAq2B,GAAQ,CAAI,CAAC"}

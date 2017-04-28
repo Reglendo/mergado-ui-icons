@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconFlag extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconFlag;
+export declare const IconFlag: JSX.Element;

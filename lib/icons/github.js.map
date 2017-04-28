@@ -1,1 +1,1 @@
-{"version":3,"file":"github.js","sourceRoot":"","sources":["../../icons/github.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAyB,8BAAuB;IAAhD;;IAIA,CAAC;IAHC,2BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,0mCAA0mC,GAAQ,CAAI,CAAC;IAC3oC,CAAC;IACH,iBAAC;AAAD,CAAC,AAJD,CAAyB,KAAK,CAAC,SAAS,GAIvC;AACD,kBAAe,UAAU,CAAA"}
+{"version":3,"file":"github.js","sourceRoot":"","sources":["../../icons/github.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,UAAU,GACf;IAAG,8BAAM,CAAC,EAAC,0mCAA0mC,GAAQ,CAAI,CAAC"}

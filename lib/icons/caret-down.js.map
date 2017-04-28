@@ -1,1 +1,1 @@
-{"version":3,"file":"caret-down.js","sourceRoot":"","sources":["../../icons/caret-down.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA4B,iCAAuB;IAAnD;;IAIA,CAAC;IAHC,8BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,6GAA6G,GAAQ,CAAI,CAAC;IAC9I,CAAC;IACH,oBAAC;AAAD,CAAC,AAJD,CAA4B,KAAK,CAAC,SAAS,GAI1C;AACD,kBAAe,aAAa,CAAA"}
+{"version":3,"file":"caret-down.js","sourceRoot":"","sources":["../../icons/caret-down.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,aAAa,GAClB;IAAG,8BAAM,CAAC,EAAC,6GAA6G,GAAQ,CAAI,CAAC"}

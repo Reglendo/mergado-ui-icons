@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconThumbsOUp extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconThumbsOUp;
+export declare const IconThumbsOUp: JSX.Element;

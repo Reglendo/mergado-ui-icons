@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconGithubSquare extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconGithubSquare;
+export declare const IconGithubSquare: JSX.Element;

@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconLocationArrow extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconLocationArrow;
+export declare const IconLocationArrow: JSX.Element;

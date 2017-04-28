@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconGgCircle extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconGgCircle;
+export declare const IconGgCircle: JSX.Element;

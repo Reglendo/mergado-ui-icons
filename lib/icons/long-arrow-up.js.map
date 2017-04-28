@@ -1,1 +1,1 @@
-{"version":3,"file":"long-arrow-up.js","sourceRoot":"","sources":["../../icons/long-arrow-up.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA8B,mCAAuB;IAArD;;IAIA,CAAC;IAHC,gCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,oLAAoL,GAAQ,CAAI,CAAC;IACrN,CAAC;IACH,sBAAC;AAAD,CAAC,AAJD,CAA8B,KAAK,CAAC,SAAS,GAI5C;AACD,kBAAe,eAAe,CAAA"}
+{"version":3,"file":"long-arrow-up.js","sourceRoot":"","sources":["../../icons/long-arrow-up.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,eAAe,GACpB;IAAG,8BAAM,CAAC,EAAC,oLAAoL,GAAQ,CAAI,CAAC"}

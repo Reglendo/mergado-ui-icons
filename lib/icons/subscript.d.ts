@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconSubscript extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconSubscript;
+export declare const IconSubscript: JSX.Element;

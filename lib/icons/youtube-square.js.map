@@ -1,1 +1,1 @@
-{"version":3,"file":"youtube-square.js","sourceRoot":"","sources":["../../icons/youtube-square.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAgC,qCAAuB;IAAvD;;IAIA,CAAC;IAHC,kCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,42CAA42C,GAAQ,CAAI,CAAC;IAC74C,CAAC;IACH,wBAAC;AAAD,CAAC,AAJD,CAAgC,KAAK,CAAC,SAAS,GAI9C;AACD,kBAAe,iBAAiB,CAAA"}
+{"version":3,"file":"youtube-square.js","sourceRoot":"","sources":["../../icons/youtube-square.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,iBAAiB,GACtB;IAAG,8BAAM,CAAC,EAAC,42CAA42C,GAAQ,CAAI,CAAC"}

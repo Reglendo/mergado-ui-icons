@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconRefresh extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconRefresh;
+export declare const IconRefresh: JSX.Element;

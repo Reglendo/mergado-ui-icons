@@ -1,1 +1,1 @@
-{"version":3,"file":"facebook.js","sourceRoot":"","sources":["../../icons/facebook.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAA2B,gCAAuB;IAAlD;;IAIA,CAAC;IAHC,6BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,0IAA0I,GAAQ,CAAI,CAAC;IAC3K,CAAC;IACH,mBAAC;AAAD,CAAC,AAJD,CAA2B,KAAK,CAAC,SAAS,GAIzC;AACD,kBAAe,YAAY,CAAA"}
+{"version":3,"file":"facebook.js","sourceRoot":"","sources":["../../icons/facebook.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,YAAY,GACjB;IAAG,8BAAM,CAAC,EAAC,0IAA0I,GAAQ,CAAI,CAAC"}

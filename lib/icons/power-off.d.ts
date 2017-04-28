@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconPowerOff extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconPowerOff;
+export declare const IconPowerOff: JSX.Element;

@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconOdnoklassniki extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconOdnoklassniki;
+export declare const IconOdnoklassniki: JSX.Element;

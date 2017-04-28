@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconCreativeCommons extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconCreativeCommons;
+export declare const IconCreativeCommons: JSX.Element;

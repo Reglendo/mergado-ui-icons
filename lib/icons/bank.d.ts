@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconBank extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconBank;
+export declare const IconBank: JSX.Element;

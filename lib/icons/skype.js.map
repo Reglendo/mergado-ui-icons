@@ -1,1 +1,1 @@
-{"version":3,"file":"skype.js","sourceRoot":"","sources":["../../icons/skype.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAwB,6BAAuB;IAA/C;;IAIA,CAAC;IAHC,0BAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,gtBAAgtB,GAAQ,CAAI,CAAC;IACjvB,CAAC;IACH,gBAAC;AAAD,CAAC,AAJD,CAAwB,KAAK,CAAC,SAAS,GAItC;AACD,kBAAe,SAAS,CAAA"}
+{"version":3,"file":"skype.js","sourceRoot":"","sources":["../../icons/skype.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,SAAS,GACd;IAAG,8BAAM,CAAC,EAAC,gtBAAgtB,GAAQ,CAAI,CAAC"}

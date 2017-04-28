@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconBackward extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconBackward;
+export declare const IconBackward: JSX.Element;

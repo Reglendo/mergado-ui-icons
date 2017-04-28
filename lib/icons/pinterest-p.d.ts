@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconPinterestP extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconPinterestP;
+export declare const IconPinterestP: JSX.Element;

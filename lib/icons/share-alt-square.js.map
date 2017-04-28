@@ -1,1 +1,1 @@
-{"version":3,"file":"share-alt-square.js","sourceRoot":"","sources":["../../icons/share-alt-square.tsx"],"names":[],"mappings":";;;;;;;;;;;;AACA,6BAA8B;AAC9B;IAAiC,sCAAuB;IAAxD;;IAIA,CAAC;IAHC,mCAAM,GAAN;QACE,MAAM,CAAC;YAAG,8BAAM,CAAC,EAAC,8aAA8a,GAAQ,CAAI,CAAC;IAC/c,CAAC;IACH,yBAAC;AAAD,CAAC,AAJD,CAAiC,KAAK,CAAC,SAAS,GAI/C;AACD,kBAAe,kBAAkB,CAAA"}
+{"version":3,"file":"share-alt-square.js","sourceRoot":"","sources":["../../icons/share-alt-square.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,kBAAkB,GACvB;IAAG,8BAAM,CAAC,EAAC,8aAA8a,GAAQ,CAAI,CAAC"}

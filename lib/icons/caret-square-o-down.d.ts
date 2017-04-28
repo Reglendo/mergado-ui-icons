@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconCaretSquareODown extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconCaretSquareODown;
+export declare const IconCaretSquareODown: JSX.Element;

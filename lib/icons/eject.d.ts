@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconEject extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconEject;
+export declare const IconEject: JSX.Element;

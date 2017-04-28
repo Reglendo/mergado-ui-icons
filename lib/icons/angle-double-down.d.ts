@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconAngleDoubleDown extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconAngleDoubleDown;
+export declare const IconAngleDoubleDown: JSX.Element;

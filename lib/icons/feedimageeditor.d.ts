@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconFeedimageeditor extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconFeedimageeditor;
+export declare const IconFeedimageeditor: JSX.Element;

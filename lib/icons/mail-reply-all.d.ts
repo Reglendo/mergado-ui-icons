@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconMailReplyAll extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconMailReplyAll;
+export declare const IconMailReplyAll: JSX.Element;

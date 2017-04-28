@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconExpeditedssl extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconExpeditedssl;
+export declare const IconExpeditedssl: JSX.Element;

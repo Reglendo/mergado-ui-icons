@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconGavel extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconGavel;
+export declare const IconGavel: JSX.Element;

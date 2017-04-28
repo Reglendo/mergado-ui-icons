@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconInfo extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconInfo;
+export declare const IconInfo: JSX.Element;

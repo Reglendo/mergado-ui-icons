@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconCodeFork extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconCodeFork;
+export declare const IconCodeFork: JSX.Element;

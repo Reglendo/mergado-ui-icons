@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconSnapchatGhost extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconSnapchatGhost;
+export declare const IconSnapchatGhost: JSX.Element;

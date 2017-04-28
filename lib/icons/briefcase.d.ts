@@ -1,6 +1,2 @@
 /// <reference types="react" />
-import * as React from "react";
-declare class IconBriefcase extends React.Component<{}, {}> {
-    render(): JSX.Element;
-}
-export default IconBriefcase;
+export declare const IconBriefcase: JSX.Element;
