@@ -119,17 +119,17 @@ export default ${name}
         fs.writeFileSync(path.join(destination), component, 'utf-8');
         console.log(destination)
     });
-    //  _.each(types, function(components, folder) {
-    //     var iconsModule = _.map(components, function(loc, name){
-    //         loc = loc.replace('.js', '');
-    //         loc = loc.replace(folder, '/icons');
-    //         loc = "." + loc;
-    //         return `export { ${name} } from '${loc.replace(".tsx","")}';`;
-    //     }).join('\n') + '\n';
-    //
-    //     fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
-    //     console.log(path.join(rootDir, '/index.tsx'));
-    // });
+     _.each(types, function(components, folder) {
+        var iconsModule = _.map(components, function(loc, name){
+            loc = loc.replace('.js', '');
+            loc = loc.replace(folder, '/icons');
+            loc = "." + loc;
+            return `export { default as ${name} } from '${loc.replace(".tsx","")}';`;
+        }).join('\n') + '\n';
+
+        fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
+        console.log(path.join(rootDir, '/index.tsx'));
+    });
 });
 
 
