@@ -1,4 +1,53 @@
 
+
 import * as React from "react"
-export const IconToggleOn: JSX.Element = 
-        <g><path d="m0 20q0-2.5 1-4.8t2.6-4 4-2.6 4.8-1h14.9q2.6 0 4.9 1t3.9 2.6 2.7 4 1 4.8-1 4.8-2.7 4-3.9 2.6-4.9 1h-14.9q-2.5 0-4.8-1t-4-2.6-2.6-4-1-4.8z m27.3 9.9q2 0 3.9-0.7t3.2-2.2 2.1-3.1 0.8-3.9-0.8-3.9-2.1-3.1-3.2-2.2-3.9-0.7-3.8 0.7-3.2 2.2-2.1 3.1-0.8 3.9 0.8 3.9 2.1 3.1 3.2 2.2 3.8 0.7z"></path></g>;
+
+export interface Props {
+    /** Icon type */
+    type: string
+    /** Size */
+    size?: number
+    /** Icon text */
+    text?: string
+    /** Icon title */
+    title?: string
+    style?: any
+}
+export interface State {
+}
+
+class IconToggleOn extends React.Component<Props, State> {
+
+    readonly name = "muk-icon";
+
+    public static defaultProps: Props = {
+        type: "reglendo",
+        size: 15,
+        style: {}
+    }
+
+    render() {
+        let className = `${this.name} ${this.name}--${this.props.type}`
+
+        return (
+            <span className={className} style={this.props.style}>
+                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
+                     fill='currentColor'
+                     height={this.props.size}
+                     width={this.props.size}
+                     viewBox={`0 0 40 40`}
+                >
+                    <g><path d="m0 20q0-2.5 1-4.8t2.6-4 4-2.6 4.8-1h14.9q2.6 0 4.9 1t3.9 2.6 2.7 4 1 4.8-1 4.8-2.7 4-3.9 2.6-4.9 1h-14.9q-2.5 0-4.8-1t-4-2.6-2.6-4-1-4.8z m27.3 9.9q2 0 3.9-0.7t3.2-2.2 2.1-3.1 0.8-3.9-0.8-3.9-2.1-3.1-3.2-2.2-3.9-0.7-3.8 0.7-3.2 2.2-2.1 3.1-0.8 3.9 0.8 3.9 2.1 3.1 3.2 2.2 3.8 0.7z"></path></g>
+                </svg>
+                {this.props.text ? (
+                    <span className={`${this.name}__text`}>
+                        {this.props.text}
+                    </span>
+                ) : null}
+            </span>
+        )
+    }
+}
+
+export default IconToggleOn
+

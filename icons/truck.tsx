@@ -1,4 +1,53 @@
 
+
 import * as React from "react"
-export const IconTruck: JSX.Element = 
-        <g><path d="m13.9 31.2q0-1.2-0.8-2t-2-0.8-1.9 0.8-0.8 2 0.8 1.9 2 0.8 1.9-0.8 0.8-2z m-8.3-11.2h8.3v-5.6h-3.4q-0.3 0-0.5 0.2l-4.2 4.3q-0.2 0.2-0.2 0.4v0.7z m27.8 11.2q0-1.2-0.8-2t-1.9-0.8-2 0.8-0.8 2 0.8 1.9 2 0.8 1.9-0.8 0.8-2z m5.6-23.7v22.3q0 0.3-0.1 0.5t-0.3 0.4-0.3 0.3-0.5 0.1-0.5 0.1-0.6 0-0.5 0q0 2.3-1.6 3.9t-3.9 1.6-4-1.6-1.6-3.9h-8.4q0 2.3-1.6 3.9t-3.9 1.6-4-1.6-1.6-3.9h-1.4q-0.1 0-0.5 0t-0.6 0-0.5-0.1-0.5-0.1-0.3-0.3-0.3-0.4-0.1-0.5q0-0.6 0.4-1t1-0.4v-7q0-0.2 0-0.8t0-0.8 0-0.7 0.2-0.9 0.3-0.6 0.5-0.7l4.3-4.3q0.4-0.4 1.1-0.7t1.3-0.3h3.4v-4.1q0-0.6 0.5-1t0.9-0.4h22.3q0.6 0 1 0.4t0.4 1z"></path></g>;
+
+export interface Props {
+    /** Icon type */
+    type: string
+    /** Size */
+    size?: number
+    /** Icon text */
+    text?: string
+    /** Icon title */
+    title?: string
+    style?: any
+}
+export interface State {
+}
+
+class IconTruck extends React.Component<Props, State> {
+
+    readonly name = "muk-icon";
+
+    public static defaultProps: Props = {
+        type: "reglendo",
+        size: 15,
+        style: {}
+    }
+
+    render() {
+        let className = `${this.name} ${this.name}--${this.props.type}`
+
+        return (
+            <span className={className} style={this.props.style}>
+                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
+                     fill='currentColor'
+                     height={this.props.size}
+                     width={this.props.size}
+                     viewBox={`0 0 40 40`}
+                >
+                    <g><path d="m13.9 31.2q0-1.2-0.8-2t-2-0.8-1.9 0.8-0.8 2 0.8 1.9 2 0.8 1.9-0.8 0.8-2z m-8.3-11.2h8.3v-5.6h-3.4q-0.3 0-0.5 0.2l-4.2 4.3q-0.2 0.2-0.2 0.4v0.7z m27.8 11.2q0-1.2-0.8-2t-1.9-0.8-2 0.8-0.8 2 0.8 1.9 2 0.8 1.9-0.8 0.8-2z m5.6-23.7v22.3q0 0.3-0.1 0.5t-0.3 0.4-0.3 0.3-0.5 0.1-0.5 0.1-0.6 0-0.5 0q0 2.3-1.6 3.9t-3.9 1.6-4-1.6-1.6-3.9h-8.4q0 2.3-1.6 3.9t-3.9 1.6-4-1.6-1.6-3.9h-1.4q-0.1 0-0.5 0t-0.6 0-0.5-0.1-0.5-0.1-0.3-0.3-0.3-0.4-0.1-0.5q0-0.6 0.4-1t1-0.4v-7q0-0.2 0-0.8t0-0.8 0-0.7 0.2-0.9 0.3-0.6 0.5-0.7l4.3-4.3q0.4-0.4 1.1-0.7t1.3-0.3h3.4v-4.1q0-0.6 0.5-1t0.9-0.4h22.3q0.6 0 1 0.4t0.4 1z"></path></g>
+                </svg>
+                {this.props.text ? (
+                    <span className={`${this.name}__text`}>
+                        {this.props.text}
+                    </span>
+                ) : null}
+            </span>
+        )
+    }
+}
+
+export default IconTruck
+

@@ -1,4 +1,53 @@
 
+
 import * as React from "react"
-export const IconTimesCircleO: JSX.Element = 
-        <g><path d="m27.5 24.1l-3.3 3.2q-0.2 0.3-0.5 0.3t-0.5-0.3l-3.1-3-3 3q-0.2 0.3-0.5 0.3t-0.5-0.3l-3.3-3.2q-0.2-0.2-0.2-0.5t0.2-0.5l3.1-3.1-3.1-3.1q-0.2-0.2-0.2-0.5t0.2-0.5l3.3-3.2q0.2-0.3 0.5-0.3t0.5 0.3l3 3 3.1-3q0.2-0.3 0.5-0.3t0.5 0.3l3.3 3.2q0.2 0.2 0.2 0.5t-0.2 0.5l-3.1 3.1 3.1 3.1q0.2 0.2 0.2 0.5t-0.2 0.5z m4.8-4.1q0-3.3-1.6-6.1t-4.5-4.4-6.1-1.6-6.1 1.6-4.4 4.4-1.6 6.1 1.6 6.1 4.4 4.4 6.1 1.6 6.1-1.6 4.5-4.4 1.6-6.1z m5 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"></path></g>;
+
+export interface Props {
+    /** Icon type */
+    type: string
+    /** Size */
+    size?: number
+    /** Icon text */
+    text?: string
+    /** Icon title */
+    title?: string
+    style?: any
+}
+export interface State {
+}
+
+class IconTimesCircleO extends React.Component<Props, State> {
+
+    readonly name = "muk-icon";
+
+    public static defaultProps: Props = {
+        type: "reglendo",
+        size: 15,
+        style: {}
+    }
+
+    render() {
+        let className = `${this.name} ${this.name}--${this.props.type}`
+
+        return (
+            <span className={className} style={this.props.style}>
+                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
+                     fill='currentColor'
+                     height={this.props.size}
+                     width={this.props.size}
+                     viewBox={`0 0 40 40`}
+                >
+                    <g><path d="m27.5 24.1l-3.3 3.2q-0.2 0.3-0.5 0.3t-0.5-0.3l-3.1-3-3 3q-0.2 0.3-0.5 0.3t-0.5-0.3l-3.3-3.2q-0.2-0.2-0.2-0.5t0.2-0.5l3.1-3.1-3.1-3.1q-0.2-0.2-0.2-0.5t0.2-0.5l3.3-3.2q0.2-0.3 0.5-0.3t0.5 0.3l3 3 3.1-3q0.2-0.3 0.5-0.3t0.5 0.3l3.3 3.2q0.2 0.2 0.2 0.5t-0.2 0.5l-3.1 3.1 3.1 3.1q0.2 0.2 0.2 0.5t-0.2 0.5z m4.8-4.1q0-3.3-1.6-6.1t-4.5-4.4-6.1-1.6-6.1 1.6-4.4 4.4-1.6 6.1 1.6 6.1 4.4 4.4 6.1 1.6 6.1-1.6 4.5-4.4 1.6-6.1z m5 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"></path></g>
+                </svg>
+                {this.props.text ? (
+                    <span className={`${this.name}__text`}>
+                        {this.props.text}
+                    </span>
+                ) : null}
+            </span>
+        )
+    }
+}
+
+export default IconTimesCircleO
+

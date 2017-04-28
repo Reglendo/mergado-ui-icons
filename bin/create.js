@@ -58,9 +58,58 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         iconSvg = iconSvg.match(/(<(g|path).*<\/(g|path)>)/g)[0].replace(/inkscape\:.*?\".*?\"/g,'')
                 
         var component = `
+
 import * as React from "react"
-export const ${name}: JSX.Element = 
-        <g>${iconSvg}</g>;
+
+export interface Props {
+    /** Icon type */
+    type: string
+    /** Size */
+    size?: number
+    /** Icon text */
+    text?: string
+    /** Icon title */
+    title?: string
+    style?: any
+}
+export interface State {
+}
+
+class ${name} extends React.Component<Props, State> {
+
+    readonly name = "muk-icon";
+
+    public static defaultProps: Props = {
+        type: "reglendo",
+        size: 15,
+        style: {}
+    }
+
+    render() {
+        let className = \`\${this.name} \${this.name}--\${this.props.type}\`
+
+        return (
+            <span className={className} style={this.props.style}>
+                <svg className={\`\${this.name}__image\`} preserveAspectRatio='xMidYMid meet'
+                     fill='currentColor'
+                     height={this.props.size}
+                     width={this.props.size}
+                     viewBox={\`0 0 40 40\`}
+                >
+                    <g>${iconSvg}</g>
+                </svg>
+                {this.props.text ? (
+                    <span className={\`\${this.name}__text\`}>
+                        {this.props.text}
+                    </span>
+                ) : null}
+            </span>
+        )
+    }
+}
+
+export default ${name}
+
 `
         var destination = path.join(rootDir, 'icons/', location.replace(folder,''))
 
@@ -70,17 +119,17 @@ export const ${name}: JSX.Element =
         fs.writeFileSync(path.join(destination), component, 'utf-8');
         console.log(destination)
     });
-     _.each(types, function(components, folder) {
-        var iconsModule = _.map(components, function(loc, name){
-            loc = loc.replace('.js', '');
-            loc = loc.replace(folder, '/icons');
-            loc = "." + loc;
-            return `export { ${name} } from '${loc.replace(".tsx","")}';`;
-        }).join('\n') + '\n';
-
-        fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
-        console.log(path.join(rootDir, '/index.tsx'));
-    });
+    //  _.each(types, function(components, folder) {
+    //     var iconsModule = _.map(components, function(loc, name){
+    //         loc = loc.replace('.js', '');
+    //         loc = loc.replace(folder, '/icons');
+    //         loc = "." + loc;
+    //         return `export { ${name} } from '${loc.replace(".tsx","")}';`;
+    //     }).join('\n') + '\n';
+    //
+    //     fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
+    //     console.log(path.join(rootDir, '/index.tsx'));
+    // });
 });
 
 

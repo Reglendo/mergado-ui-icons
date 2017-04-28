@@ -1,4 +1,53 @@
 
+
 import * as React from "react"
-export const IconHddO: JSX.Element = 
-        <g><path d="m26.2 27.1q0 0.8-0.5 1.3t-1.3 0.5-1.2-0.5-0.6-1.3 0.6-1.2 1.2-0.5 1.3 0.5 0.5 1.2z m5.7 0q0 0.8-0.5 1.3t-1.3 0.5-1.2-0.5-0.5-1.3 0.5-1.2 1.2-0.5 1.3 0.5 0.5 1.2z m2.5 3.6v-7.1q0-0.3-0.2-0.5t-0.5-0.2h-27.1q-0.3 0-0.5 0.2t-0.2 0.5v7.1q0 0.3 0.2 0.5t0.5 0.2h27.1q0.3 0 0.5-0.2t0.2-0.5z m-27.4-10.7h26.3l-3.5-10.8q-0.1-0.2-0.4-0.4t-0.5-0.2h-17.5q-0.3 0-0.6 0.2t-0.3 0.4z m30.3 3.6v7.1q0 1.5-1.1 2.5t-2.5 1.1h-27.1q-1.5 0-2.6-1.1t-1-2.5v-7.1q0-0.6 0.4-1.7l4.4-13.5q0.3-1.2 1.4-2t2.2-0.7h17.5q1.2 0 2.2 0.7t1.4 2l4.4 13.5q0.4 1.1 0.4 1.7z"></path></g>;
+
+export interface Props {
+    /** Icon type */
+    type: string
+    /** Size */
+    size?: number
+    /** Icon text */
+    text?: string
+    /** Icon title */
+    title?: string
+    style?: any
+}
+export interface State {
+}
+
+class IconHddO extends React.Component<Props, State> {
+
+    readonly name = "muk-icon";
+
+    public static defaultProps: Props = {
+        type: "reglendo",
+        size: 15,
+        style: {}
+    }
+
+    render() {
+        let className = `${this.name} ${this.name}--${this.props.type}`
+
+        return (
+            <span className={className} style={this.props.style}>
+                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
+                     fill='currentColor'
+                     height={this.props.size}
+                     width={this.props.size}
+                     viewBox={`0 0 40 40`}
+                >
+                    <g><path d="m26.2 27.1q0 0.8-0.5 1.3t-1.3 0.5-1.2-0.5-0.6-1.3 0.6-1.2 1.2-0.5 1.3 0.5 0.5 1.2z m5.7 0q0 0.8-0.5 1.3t-1.3 0.5-1.2-0.5-0.5-1.3 0.5-1.2 1.2-0.5 1.3 0.5 0.5 1.2z m2.5 3.6v-7.1q0-0.3-0.2-0.5t-0.5-0.2h-27.1q-0.3 0-0.5 0.2t-0.2 0.5v7.1q0 0.3 0.2 0.5t0.5 0.2h27.1q0.3 0 0.5-0.2t0.2-0.5z m-27.4-10.7h26.3l-3.5-10.8q-0.1-0.2-0.4-0.4t-0.5-0.2h-17.5q-0.3 0-0.6 0.2t-0.3 0.4z m30.3 3.6v7.1q0 1.5-1.1 2.5t-2.5 1.1h-27.1q-1.5 0-2.6-1.1t-1-2.5v-7.1q0-0.6 0.4-1.7l4.4-13.5q0.3-1.2 1.4-2t2.2-0.7h17.5q1.2 0 2.2 0.7t1.4 2l4.4 13.5q0.4 1.1 0.4 1.7z"></path></g>
+                </svg>
+                {this.props.text ? (
+                    <span className={`${this.name}__text`}>
+                        {this.props.text}
+                    </span>
+                ) : null}
+            </span>
+        )
+    }
+}
+
+export default IconHddO
+
