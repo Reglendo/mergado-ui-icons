@@ -324,6 +324,7 @@ export { IconHtml5 } from './icons/const/html5';
 export { IconICursor } from './icons/const/i-cursor';
 export { IconIls } from './icons/const/ils';
 export { IconImage } from './icons/const/image';
+export { IconImportant } from './icons/const/important';
 export { IconInbox } from './icons/const/inbox';
 export { IconIndent } from './icons/const/indent';
 export { IconIndustry } from './icons/const/industry';
