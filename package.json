@@ -1,9 +1,9 @@
 {
   "name": "mergado-ui-icons",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Typescript exports of fontawesome icons",
   "scripts": {
-    "build": "node ./bin/create && tsc -d",
+    "build": "node ./bin/create && tsc",
     "create": "node ./bin/create"
   },
   "repository": {

@@ -113,11 +113,12 @@ import * as React from "react"
 export const ${name}: JSX.Element =  
         <g>${iconSvg}</g>; 
 `
-        var destination = path.join(rootDir, 'icons/', location.replace(folder,''))
-        var destinationConst = path.join(rootDir, 'icons/const/', location.replace(folder,''))
+        var destination = path.join(rootDir, 'icons/', name + '.tsx')
+        var destinationConst = path.join(rootDir, 'icons/const/', name  + '.tsx')
         if (!fs.existsSync(path.join(rootDir, 'icons/'))){
             fs.mkdirSync(path.join(rootDir, 'icons/'));
         }
+
         fs.writeFileSync(path.join(destination), component, 'utf-8');
         fs.writeFileSync(path.join(destinationConst), constant, 'utf-8');
         console.log(destination)
@@ -127,7 +128,7 @@ export const ${name}: JSX.Element =
             loc = loc.replace('.js', '');
             loc = loc.replace(folder, '/icons/const');
             loc = "." + loc;
-            return `export { ${name} } from '${loc.replace(".tsx","")}';`;
+            return `export { default as ${name} } from 'icons/${name}';`;
         }).join('\n') + '\n';
 
         fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');
