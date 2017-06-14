@@ -3,13 +3,11 @@
 import * as React from "react"
 
 export interface Props {
-    /** Size */
     size?: number
-    /** Icon text */
     text?: string
-    /** Icon title */
     title?: string
     style?: any
+    addClass?: string
 }
 export interface State {
 }
@@ -20,11 +18,12 @@ class IconChild extends React.Component<Props, State> {
 
     public static defaultProps: Props = {
         size: 15,
-        style: {}
+        style: {},
+        addClass: "",
     }
 
     render() {
-        let className = `${this.name} ${this.name}--child`
+        let className = `${this.name} ${this.name}--child ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style}>

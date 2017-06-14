@@ -30,8 +30,8 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         $ = cheerio.load(svg,{
             xmlMode: false,
             decodeEntities: true
-        }); 
-        
+        });
+
         var $svg = $('svg');
         cleanAtrributes($svg, $);
         var iconSvg = $svg.html();
@@ -45,7 +45,7 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
             types[folder] = {};
         }
         types[folder][name] = location;
-                
+
         iconSvg = iconSvg.replace(/\n/g,'').replace(/\r/g,'').replace(/(style\=\")(.*?)\"/g,function(str,match,style) {
 
                 var style = style.split(';').map(function(obj) {
@@ -62,13 +62,11 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
 import * as React from "react"
 
 export interface Props {
-    /** Size */
     size?: number
-    /** Icon text */
     text?: string
-    /** Icon title */
     title?: string
     style?: any
+    addClass?: string
 }
 export interface State {
 }
@@ -79,11 +77,12 @@ class ${name} extends React.Component<Props, State> {
 
     public static defaultProps: Props = {
         size: 15,
-        style: {}
+        style: {},
+        addClass: "",
     }
 
     render() {
-        let className = \`\${this.name} \${this.name}--${id}\`
+        let className = \`\${this.name} \${this.name}--${id} \${this.props.addClass}\`
 
         return (
             <span className={className} style={this.props.style}>
@@ -109,9 +108,9 @@ export default ${name}
 
 `
         var constant = `
-import * as React from "react" 
-export const ${name}: JSX.Element =  
-        <g>${iconSvg}</g>; 
+import * as React from "react"
+export const ${name}: JSX.Element =
+        <g>${iconSvg}</g>;
 `
         var destination = path.join(rootDir, 'icons/', name + '.tsx')
         var destinationConst = path.join(rootDir, 'icons/const/', name  + '.tsx')

@@ -3,13 +3,11 @@
 import * as React from "react"
 
 export interface Props {
-    /** Size */
     size?: number
-    /** Icon text */
     text?: string
-    /** Icon title */
     title?: string
     style?: any
+    addClass?: string
 }
 export interface State {
 }
@@ -20,11 +18,12 @@ class IconMapPin extends React.Component<Props, State> {
 
     public static defaultProps: Props = {
         size: 15,
-        style: {}
+        style: {},
+        addClass: "",
     }
 
     render() {
-        let className = `${this.name} ${this.name}--map-pin`
+        let className = `${this.name} ${this.name}--map-pin ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style}>
