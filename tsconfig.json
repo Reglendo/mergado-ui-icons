@@ -11,7 +11,7 @@
 	"allowSyntheticDefaultImports": true
     },
     "include": [
-        "export/",
+        "icons/",
 	    "./index.tsx"
     ]
 }
