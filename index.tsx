@@ -47,6 +47,7 @@ export { IconBackward } from './icons/const/IconBackward';
 export { IconBadgeFifth } from './icons/const/IconBadgeFifth';
 export { IconBadgeFirst } from './icons/const/IconBadgeFirst';
 export { IconBadgeFourth } from './icons/const/IconBadgeFourth';
+export { IconBadgePno } from './icons/const/IconBadgePno';
 export { IconBadgeSecond } from './icons/const/IconBadgeSecond';
 export { IconBadgeThird } from './icons/const/IconBadgeThird';
 export { IconBadge } from './icons/const/IconBadge';

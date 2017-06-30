@@ -20,13 +20,14 @@ class IconMale extends React.Component<Props, State> {
         size: 15,
         style: {},
         addClass: "",
+        title: "",
     }
 
     render() {
         let className = `${this.name} ${this.name}--male ${this.props.addClass}`
 
         return (
-            <span className={className} style={this.props.style}>
+            <span className={className} style={this.props.style} title={this.props.title}>
                 <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
                      fill='currentColor'
                      height={this.props.size}
