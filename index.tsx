@@ -323,6 +323,8 @@ export { IconHeadphones } from './icons/const/IconHeadphones';
 export { IconHeartO } from './icons/const/IconHeartO';
 export { IconHeart } from './icons/const/IconHeart';
 export { IconHeartbeat } from './icons/const/IconHeartbeat';
+export { IconHeurekaSmall } from './icons/const/IconHeurekaSmall';
+export { IconHeureka } from './icons/const/IconHeureka';
 export { IconHistory } from './icons/const/IconHistory';
 export { IconHome } from './icons/const/IconHome';
 export { IconHospitalO } from './icons/const/IconHospitalO';
