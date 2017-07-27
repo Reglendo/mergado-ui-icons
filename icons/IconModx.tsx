@@ -8,6 +8,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -21,6 +22,7 @@ class IconModx extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "0 0 40 40",
     }
 
     render() {
@@ -32,7 +34,7 @@ class IconModx extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={`0 0 40 40`}
+                     viewBox={this.props.viewBox}
                 >
                     <g><path d="m31.9 15.8l-13.8-8.6 2.1-3.4h19.1z m-22.9 5.9l-4.1-2.5v-19.2l26.4 16.6z m22.8-3l3.3 2.1v19.2l-11.9-7.5z m-0.8-0.4l-11.2 17.9h-19.1l8-12.8z"></path></g>
                 </svg>

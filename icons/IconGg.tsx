@@ -8,6 +8,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -21,6 +22,7 @@ class IconGg extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "0 0 40 40",
     }
 
     render() {
@@ -32,7 +34,7 @@ class IconGg extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={`0 0 40 40`}
+                     viewBox={this.props.viewBox}
                 >
                     <g><path d="m14.3 18.1l7.4 7.5-7.4 7.4-13.1-13 13.1-13 3.2 3.2-1.8 1.9-1.4-1.4-9.3 9.3 9.3 9.3 3.7-3.7-5.6-5.6z m11.2-11.1l13 13-13 13-3.3-3.2 1.9-1.9 1.4 1.4 9.3-9.3-9.3-9.3-3.8 3.7 5.6 5.6-1.8 1.9-7.5-7.5z"></path></g>
                 </svg>

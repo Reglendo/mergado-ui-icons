@@ -8,6 +8,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -21,6 +22,7 @@ class IconAngleUp extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "0 0 40 40",
     }
 
     render() {
@@ -32,7 +34,7 @@ class IconAngleUp extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={`0 0 40 40`}
+                     viewBox={this.props.viewBox}
                 >
                     <g><path d="m31 26.4q0 0.3-0.2 0.5l-1.1 1.2q-0.3 0.2-0.6 0.2t-0.5-0.2l-8.7-8.8-8.8 8.8q-0.2 0.2-0.5 0.2t-0.5-0.2l-1.2-1.2q-0.2-0.2-0.2-0.5t0.2-0.5l10.4-10.4q0.3-0.2 0.6-0.2t0.5 0.2l10.4 10.4q0.2 0.2 0.2 0.5z"></path></g>
                 </svg>

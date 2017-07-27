@@ -8,6 +8,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -21,6 +22,7 @@ class IconCircle extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "0 0 40 40",
     }
 
     render() {
@@ -32,7 +34,7 @@ class IconCircle extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={`0 0 40 40`}
+                     viewBox={this.props.viewBox}
                 >
                     <g><path d="m37.3 20q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"></path></g>
                 </svg>

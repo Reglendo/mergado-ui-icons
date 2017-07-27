@@ -8,6 +8,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -21,6 +22,7 @@ class IconWindows extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "0 0 40 40",
     }
 
     render() {
@@ -32,7 +34,7 @@ class IconWindows extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={`0 0 40 40`}
+                     viewBox={this.props.viewBox}
                 >
                     <g><path d="m16.7 22.5v14.5l-15.2-2.1v-12.4h15.2z m0-16.6v14.7h-15.2v-12.6z m21.9 16.6v17.5l-20.2-2.8v-14.7h20.2z m0-19.6v17.7h-20.2v-15z"></path></g>
                 </svg>

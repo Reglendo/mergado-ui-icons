@@ -35,7 +35,7 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         var $svg = $('svg');
         cleanAtrributes($svg, $);
         var iconSvg = $svg.html();
-        var viewBox = $svg.attr('viewBox');
+        var viewBox = $svg.attr('viewbox');
         var folder = iconPath.replace(path.join(rootDir, 'icons') + '/', '').replace( '/' + path.basename(iconPath), '');
         var type = capitalize(camelcase(folder));
         var name = 'Icon' + capitalize(camelcase(id));
@@ -56,7 +56,6 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         })
 
         iconSvg = iconSvg.match(/(<(g|path).*<\/(g|path)>)/g)[0].replace(/inkscape\:.*?\".*?\"/g,'')
-
         var component = `
 
 import * as React from "react"
@@ -67,6 +66,7 @@ export interface Props {
     title?: string
     style?: any
     addClass?: string
+    viewBox?: string
 }
 export interface State {
 }
@@ -80,6 +80,7 @@ class ${name} extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
+        viewBox: "${viewBox}",
     }
 
     render() {
@@ -91,7 +92,7 @@ class ${name} extends React.Component<Props, State> {
                      fill='currentColor'
                      height={this.props.size}
                      width={this.props.size}
-                     viewBox={\`0 0 40 40\`}
+                     viewBox={this.props.viewBox}
                 >
                     <g>${iconSvg}</g>
                 </svg>
