@@ -4,7 +4,8 @@
   "description": "Mergado UI KIT icons",
   "scripts": {
     "build": "node ./bin/create && tsc",
-    "create": "node ./bin/create"
+    "create": "node ./bin/create",
+    "postinstall": "node ./bin/create && tsc"
   },
   "repository": {
     "type": "git",
