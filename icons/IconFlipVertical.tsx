@@ -22,7 +22,7 @@ class IconFlipVertical extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
-        viewBox: "undefined",
+        viewBox: "0 0 40 40",
     }
 
     render() {

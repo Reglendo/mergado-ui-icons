@@ -80,7 +80,7 @@ class ${name} extends React.Component<Props, State> {
         style: {},
         addClass: "",
         title: "",
-        viewBox: "${viewBox}",
+        viewBox: "${viewBox ? viewBox : "0 0 40 40"}",
     }
 
     render() {
