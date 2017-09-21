@@ -1,1 +1,1 @@
-{"version":3,"file":"IconTwitterSquare.js","sourceRoot":"","sources":["../../../icons/const/IconTwitterSquare.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,iBAAiB,GACtB;IAAG,8BAAM,CAAC,EAAC,gfAAgf,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconTwitterSquare.js","sourceRoot":"","sources":["../../../icons/const/IconTwitterSquare.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,iBAAiB,GACtB;IAAG,8BAAM,CAAC,EAAC,gfAAgf,GAAQ,CAAI,CAAC"}

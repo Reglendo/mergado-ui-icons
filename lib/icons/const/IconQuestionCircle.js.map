@@ -1,1 +1,1 @@
-{"version":3,"file":"IconQuestionCircle.js","sourceRoot":"","sources":["../../../icons/const/IconQuestionCircle.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,kBAAkB,GACvB;IAAG,8BAAM,CAAC,EAAC,qiBAAqiB,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconQuestionCircle.js","sourceRoot":"","sources":["../../../icons/const/IconQuestionCircle.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,kBAAkB,GACvB;IAAG,8BAAM,CAAC,EAAC,qiBAAqiB,GAAQ,CAAI,CAAC"}

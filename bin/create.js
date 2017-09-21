@@ -129,7 +129,7 @@ export const ${name}: JSX.Element =
             loc = loc.replace('.js', '');
             loc = loc.replace(folder, '/icons/const');
             loc = "." + loc;
-            return `export { ${name} } from './icons/const/${name}';`;
+            return `export { default as ${name} } from './icons/${name}';`;
         }).join('\n') + '\n';
 
         fs.writeFileSync(path.join(rootDir, '/index.tsx'), iconsModule, 'utf-8');

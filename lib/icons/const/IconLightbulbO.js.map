@@ -1,1 +1,1 @@
-{"version":3,"file":"IconLightbulbO.js","sourceRoot":"","sources":["../../../icons/const/IconLightbulbO.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,cAAc,GACnB;IAAG,8BAAM,CAAC,EAAC,osBAAosB,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconLightbulbO.js","sourceRoot":"","sources":["../../../icons/const/IconLightbulbO.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,cAAc,GACnB;IAAG,8BAAM,CAAC,EAAC,osBAAosB,GAAQ,CAAI,CAAC"}

@@ -1,6 +1,6 @@
 {
   "name": "@reglendo/mergado-ui-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mergado UI KIT icons",
   "scripts": {
     "build": "node ./bin/create && tsc",

@@ -1,1 +1,1 @@
-{"version":3,"file":"IconGoogleWallet.js","sourceRoot":"","sources":["../../../icons/const/IconGoogleWallet.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,gBAAgB,GACrB;IAAG,8BAAM,CAAC,EAAC,mWAAmW,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconGoogleWallet.js","sourceRoot":"","sources":["../../../icons/const/IconGoogleWallet.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,gBAAgB,GACrB;IAAG,8BAAM,CAAC,EAAC,mWAAmW,GAAQ,CAAI,CAAC"}

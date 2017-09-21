@@ -1,1 +1,1 @@
-{"version":3,"file":"IconLongArrowRight.js","sourceRoot":"","sources":["../../../icons/const/IconLongArrowRight.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,kBAAkB,GACvB;IAAG,8BAAM,CAAC,EAAC,uLAAuL,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconLongArrowRight.js","sourceRoot":"","sources":["../../../icons/const/IconLongArrowRight.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,kBAAkB,GACvB;IAAG,8BAAM,CAAC,EAAC,uLAAuL,GAAQ,CAAI,CAAC"}

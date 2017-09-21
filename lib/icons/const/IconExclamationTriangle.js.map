@@ -1,1 +1,1 @@
-{"version":3,"file":"IconExclamationTriangle.js","sourceRoot":"","sources":["../../../icons/const/IconExclamationTriangle.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,uBAAuB,GAC5B;IAAG,8BAAM,CAAC,EAAC,+ZAA+Z,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconExclamationTriangle.js","sourceRoot":"","sources":["../../../icons/const/IconExclamationTriangle.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,uBAAuB,GAC5B;IAAG,8BAAM,CAAC,EAAC,+ZAA+Z,GAAQ,CAAI,CAAC"}

@@ -1,1 +1,1 @@
-{"version":3,"file":"IconShip.js","sourceRoot":"","sources":["../../../icons/const/IconShip.tsx"],"names":[],"mappings":";;AACA,6BAA8B;AACjB,QAAA,QAAQ,GACb;IAAG,8BAAM,CAAC,EAAC,2vCAA2vC,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconShip.js","sourceRoot":"","sources":["../../../icons/const/IconShip.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,QAAQ,GACb;IAAG,8BAAM,CAAC,EAAC,2vCAA2vC,GAAQ,CAAI,CAAC"}
