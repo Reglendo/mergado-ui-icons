@@ -2,62 +2,124 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="40"
    height="40"
    viewBox="0 0 40 40"
    version="1.1"
    id="svg4676"
->
+   sodipodi:docname="hint-help.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1740"
+     inkscape:window-height="1048"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="5.9"
+     inkscape:cx="19.830508"
+     inkscape:cy="20"
+     inkscape:window-x="180"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4676" />
   <g
      id="layer1"
-     transform="translate(0,-286.41667)">
+     transform="matrix(3.7795275,0,0,3.7795275,0,-1082.5197)"
+     style="fill:#444444;fill-opacity:1">
     <g
        id="g151"
-       transform="matrix(0.02081203,0,0,0.02081203,0,286.41667)">
+       transform="matrix(0.02081203,0,0,0.02081203,0,286.41667)"
+       style="fill:#444444;fill-opacity:1">
       <g
-         id="g93">
+         id="g93"
+         style="fill:#444444;fill-opacity:1">
         <g
-           id="g91">
+           id="g91"
+           style="fill:#444444;fill-opacity:1">
           <g
-             id="g89">
+             id="g89"
+             style="fill:#444444;fill-opacity:1">
             <path
                id="path87"
                d="M 254.26,0 C 113.845,0 0,113.845 0,254.26 0,394.675 113.845,508.52 254.26,508.52 394.675,508.52 508.52,394.675 508.52,254.26 508.52,113.845 394.675,0 254.26,0 Z m 0,446.353 c -18.084,0 -32.736,-14.652 -32.736,-32.736 0,-18.052 14.652,-32.704 32.736,-32.704 18.052,0 32.704,14.652 32.704,32.704 0,18.084 -14.652,32.736 -32.704,32.736 z m 57.717,-156.306 c -13.349,7.342 -25.935,21.866 -25.935,27.778 0,17.544 -14.239,31.783 -31.782,31.783 -17.543,0 -31.782,-14.239 -31.782,-31.783 0,-40.364 36.995,-71.447 58.861,-83.461 32.164,-17.735 36.486,-37.058 36.486,-53.585 0,-46.688 -39.823,-53.649 -63.565,-53.649 -30.607,0 -63.565,20.087 -63.565,64.232 0,17.544 -14.239,31.782 -31.782,31.782 -17.543,0 -31.782,-14.239 -31.782,-31.782 0,-83.016 65.504,-127.797 127.13,-127.797 63.279,0 127.13,36.232 127.13,117.214 -0.001,47.133 -23.33,83.937 -69.414,109.268 z"
-               style="fill:#010002"
+               style="fill:#444444;fill-opacity:1"
                inkscape:connector-curvature="0" />
           </g>
         </g>
       </g>
       <g
-         id="g95" />
+         id="g95"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g97" />
+         id="g97"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g99" />
+         id="g99"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g101" />
+         id="g101"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g103" />
+         id="g103"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g105" />
+         id="g105"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g107" />
+         id="g107"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g109" />
+         id="g109"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g111" />
+         id="g111"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g113" />
+         id="g113"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g115" />
+         id="g115"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g117" />
+         id="g117"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g119" />
+         id="g119"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g121" />
+         id="g121"
+         style="fill:#444444;fill-opacity:1" />
       <g
-         id="g123" />
+         id="g123"
+         style="fill:#444444;fill-opacity:1" />
     </g>
   </g>
 </svg>
