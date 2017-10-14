@@ -47,7 +47,7 @@ class IconCaretLeft extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m26.3 10v20q0 0.6-0.4 1t-1 0.4-1-0.4l-10-10q-0.5-0.4-0.5-1t0.5-1l10-10q0.4-0.4 1-0.4t1 0.4 0.4 1z"></path></g>
+                    <g><path d="M26.3 10v20q0 .6-.4 1t-1 .4-1-.4l-10-10q-.5-.4-.5-1t.5-1l10-10q.4-.4 1-.4t1 .4.4 1z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

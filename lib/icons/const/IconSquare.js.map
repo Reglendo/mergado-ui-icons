@@ -1,1 +1,1 @@
-{"version":3,"file":"IconSquare.js","sourceRoot":"","sources":["../../../icons/const/IconSquare.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,UAAU,GACf;IAAG,8BAAM,CAAC,EAAC,6HAA6H,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconSquare.js","sourceRoot":"","sources":["../../../icons/const/IconSquare.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,UAAU,GACf;IAAG,8BAAM,CAAC,EAAC,uHAAuH,GAAQ,CAAI,CAAC"}

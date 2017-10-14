@@ -1,4 +1,4 @@
 
 import * as React from "react"
 export const IconDeviantart: JSX.Element =
-        <g><path d="m31.4 6.8l-6.8 13 0.5 0.6h6.3v9.3h-11.4l-0.9 0.7-3.2 6.1-0.7 0.6h-6.7v-6.7l6.8-13-0.6-0.7h-6.2v-9.3h11.3l1-0.6 3.2-6.1 0.6-0.7h6.8v6.8z"></path></g>;
+        <g><path d="M31.4 6.8l-6.8 13 .5.6h6.3v9.3H20l-.9.7-3.2 6.1-.7.6H8.5v-6.7l6.8-13-.6-.7H8.5V7.4h11.3l1-.6L24 .7l.6-.7h6.8v6.8z"></path></g>;

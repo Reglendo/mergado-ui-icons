@@ -47,7 +47,7 @@ class IconHouzz extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m19.9 26.6l11.5-6.6v13.2l-11.5 6.6v-13.2z m-11.4-6.6v13.2l11.4-6.6z m11.4-19.8v13.2l-11.4 6.6v-13.2z m0 13.2l11.5-6.6v13.2z"></path></g>
+                    <g><path d="M19.9 26.6L31.4 20v13.2l-11.5 6.6V26.6zM8.5 20v13.2l11.4-6.6zM19.9.2v13.2L8.5 20V6.8zm0 13.2l11.5-6.6V20z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

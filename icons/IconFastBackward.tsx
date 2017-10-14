@@ -47,7 +47,7 @@ class IconFastBackward extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m39 3.1q0.4-0.4 0.7-0.2t0.3 0.7v32.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.2-0.2-0.2-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.2-0.2-0.3-0.4v15.1q0 0.6-0.4 1t-1 0.4h-2.9q-0.6 0-1-0.4t-0.4-1v-31.4q0-0.6 0.4-1t1-0.4h2.9q0.6 0 1 0.4t0.4 1v15.1q0.1-0.2 0.3-0.4l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0-0.2 0.2-0.4z"></path></g>
+                    <g><path d="M39 3.1q.4-.4.7-.2t.3.7v32.8q0 .6-.3.7t-.7-.2L23.1 21q-.2-.2-.2-.4v15.8q0 .6-.3.7t-.7-.2L6 21q-.2-.2-.3-.4v15.1q0 .6-.4 1t-1 .4H1.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h2.9q.6 0 1 .4t.4 1v15.1q.1-.2.3-.4L21.9 3.1q.4-.4.7-.2t.3.7v15.8q0-.2.2-.4z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

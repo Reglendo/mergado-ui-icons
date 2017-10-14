@@ -1,1 +1,1 @@
-{"version":3,"file":"IconArrowCircleLeft.js","sourceRoot":"","sources":["../../../icons/const/IconArrowCircleLeft.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,mBAAmB,GACxB;IAAG,8BAAM,CAAC,EAAC,+UAA+U,GAAQ,CAAI,CAAC"}
+{"version":3,"file":"IconArrowCircleLeft.js","sourceRoot":"","sources":["../../../icons/const/IconArrowCircleLeft.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,MAAM,CAAC,MAAM,mBAAmB,GACxB;IAAG,8BAAM,CAAC,EAAC,sSAAsS,GAAQ,CAAI,CAAC"}

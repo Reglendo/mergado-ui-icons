@@ -47,7 +47,7 @@ class IconFlipVertical extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><g id="g3394" transform="translate(-0.84745756,-0.62109513)">    <path  id="path3357-6" d="m 33.38156,3.7812812 0,15.2196908 -24.9982253,0 z" style={{"fillRule":"evenodd","strokeWidth":1.37589288,"strokeLinecap":"butt","strokeLinejoin":"miter","strokeOpacity":1}}></path>    <path  id="path3357-3-7" d="m 33.381559,37.460909 0,-15.219691 -24.9982235,0 z" style={{"fillRule":"evenodd","strokeWidth":1.37589288,"strokeLinecap":"butt","strokeLinejoin":"miter","strokeOpacity":1,"fill":"none"}}></path>  </g></g>
+                    <g><path style={{"lineHeight":"normal","fontVariantLigatures":"normal","fontVariantPosition":"normal","fontVariantCaps":"normal","fontVariantNumeric":"normal","fontVariantAlternates":"normal","fontFeatureSettings":"normal","textIndent":0,"textAlign":"start","textDecorationLine":"none","textDecorationStyle":"solid","textDecorationColor":"#000","textTransform":"none","textOrientation":"mixed","shapePadding":0,"isolation":"auto","mixBlendMode":"normal"}} d="M33.851 1.965l-1.047.637L5.71 19.098h28.141zm-1.377 2.45V17.72H10.617zM5.71 20.961l2.565 1.563 25.576 15.57V20.96z" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill-rule="evenodd"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

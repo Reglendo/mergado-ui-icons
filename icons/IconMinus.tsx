@@ -47,7 +47,7 @@ class IconMinus extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m35.9 16.4v4.3q0 0.9-0.6 1.5t-1.5 0.7h-27.2q-0.8 0-1.5-0.7t-0.6-1.5v-4.3q0-0.9 0.6-1.5t1.5-0.6h27.2q0.9 0 1.5 0.6t0.6 1.5z"></path></g>
+                    <g><path d="M35.9 16.4v4.3q0 .9-.6 1.5t-1.5.7H6.6q-.8 0-1.5-.7t-.6-1.5v-4.3q0-.9.6-1.5t1.5-.6h27.2q.9 0 1.5.6t.6 1.5z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

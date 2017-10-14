@@ -47,7 +47,7 @@ class IconYCombinator extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m21.1 22.4l5.9-11.1h-2.5l-3.5 6.9q-0.5 1.1-1 2.1l-0.9-2.1-3.5-6.9h-2.7l5.9 11v7.2h2.3v-7.1z m16.2-19.5v34.2h-34.3v-34.2h34.3z"></path></g>
+                    <g><path d="M21.1 22.4L27 11.3h-2.5L21 18.2q-.5 1.1-1 2.1l-.9-2.1-3.5-6.9h-2.7l5.9 11v7.2h2.3v-7.1zM37.3 2.9v34.2H3V2.9h34.3z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

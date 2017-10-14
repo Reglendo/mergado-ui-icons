@@ -47,7 +47,7 @@ class IconFile extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m25.9 11.4v-10.5q0.4 0.3 0.8 0.6l9.1 9.1q0.3 0.3 0.6 0.8h-10.5z m-2.9 0.7q0 0.9 0.6 1.6t1.5 0.6h12.2v23.6q0 0.9-0.6 1.5t-1.6 0.6h-30q-0.8 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h17.9v12.1z"></path></g>
+                    <g><path d="M25.9 11.4V.9l.8.6 9.1 9.1q.3.3.6.8H25.9zm-2.9.7q0 .9.6 1.6t1.5.6h12.2v23.6q0 .9-.6 1.5t-1.6.6h-30q-.8 0-1.5-.6T3 37.9V2.1q0-.8.6-1.5T5.1 0H23v12.1z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

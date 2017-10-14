@@ -47,7 +47,7 @@ class IconCaretDown extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m31.4 15.7q0 0.6-0.5 1l-10 10q-0.4 0.4-1 0.4t-1-0.4l-10-10q-0.4-0.4-0.4-1t0.4-1 1-0.4h20q0.6 0 1 0.4t0.5 1z"></path></g>
+                    <g><path d="M31.4 15.7q0 .6-.5 1l-10 10q-.4.4-1 .4t-1-.4l-10-10q-.4-.4-.4-1t.4-1 1-.4h20q.6 0 1 .4t.5 1z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

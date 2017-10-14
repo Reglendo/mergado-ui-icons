@@ -47,7 +47,7 @@ class IconLongArrowUp extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m28.6 11q-0.2 0.4-0.7 0.4h-5v27.9q0 0.3-0.2 0.5t-0.5 0.2h-4.3q-0.3 0-0.5-0.2t-0.2-0.5v-27.9h-5q-0.5 0-0.6-0.4t0.1-0.8l7.8-8.6q0.2-0.2 0.5-0.2 0.3 0 0.5 0.2l8 8.6q0.3 0.4 0.1 0.8z"></path></g>
+                    <g><path d="M28.6 11q-.2.4-.7.4h-5v27.9q0 .3-.2.5t-.5.2h-4.3q-.3 0-.5-.2t-.2-.5V11.4h-5q-.5 0-.6-.4t.1-.8l7.8-8.6q.2-.2.5-.2t.5.2l8 8.6q.3.4.1.8z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

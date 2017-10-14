@@ -47,7 +47,7 @@ class IconBackward extends React.Component<Props, State> {
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
-                    <g><path d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"></path></g>
+                    <g><path d="M36.1 3.1q.5-.4.8-.2t.2.7v32.8q0 .6-.2.7t-.8-.2L20.3 21q-.2-.2-.3-.4v15.8q0 .6-.3.7t-.7-.2L3.1 21q-.4-.4-.4-1t.4-1L19 3.1q.4-.4.7-.2t.3.7v15.8q.1-.2.3-.4z"></path></g>
                 </svg>
                 {this.props.text && !this.props.textFirst && 
                     <span className={`muk-icon__text`}>

@@ -33,7 +33,7 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         });
 
         var $svg = $('svg');
-        cleanAtrributes($svg, $);
+//        cleanAtrributes($svg, $);
         var iconSvg = $svg.html();
         var viewBox = $svg.attr('viewbox');
         var folder = iconPath.replace(path.join(rootDir, 'icons') + '/', '').replace( '/' + path.basename(iconPath), '');
