@@ -9,6 +9,8 @@ export interface Props {
     style?: any
     addClass?: string
     viewBox?: string
+    color?: string
+    textFirst?: boolean
 }
 export interface State {
 }
@@ -23,26 +25,35 @@ class IconBluetoothB extends React.Component<Props, State> {
         addClass: "",
         title: "",
         viewBox: "0 0 40 40",
+        color: 'currentColor',
+        textFirst: false,
     }
 
     render() {
-        let className = `${this.name} ${this.name}--bluetooth-b ${this.props.addClass}`
+        let className = `muk-icon ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>
-                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
-                     fill='currentColor'
+                {this.props.text && this.props.textFirst &&
+                    <span className={`muk-icon__text`}>
+                        {this.props.text}
+                    </span>
+                }
+                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                     fill={this.props.color}
+                     stroke={this.props.color}
+                     strokeWidth={0}
                      height={this.props.size}
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
                     <g><path d="m21.8 31.8l3.9-3.9-3.9-3.8v7.7z m0-15.9l3.9-3.8-3.9-3.9v7.7z m0.7 4.1l8 7.9-12.1 12.1v-15.9l-6.6 6.6-2.4-2.4 8.3-8.3-8.3-8.3 2.4-2.4 6.6 6.6v-15.9l12.1 12.1z"></path></g>
                 </svg>
-                {this.props.text ? (
-                    <span className={`${this.name}__text`}>
+                {this.props.text && !this.props.textFirst && 
+                    <span className={`muk-icon__text`}>
                         {this.props.text}
                     </span>
-                ) : null}
+                }
             </span>
         )
     }

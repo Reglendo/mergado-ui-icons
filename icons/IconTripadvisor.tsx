@@ -9,6 +9,8 @@ export interface Props {
     style?: any
     addClass?: string
     viewBox?: string
+    color?: string
+    textFirst?: boolean
 }
 export interface State {
 }
@@ -23,26 +25,35 @@ class IconTripadvisor extends React.Component<Props, State> {
         addClass: "",
         title: "",
         viewBox: "0 0 40 40",
+        color: 'currentColor',
+        textFirst: false,
     }
 
     render() {
-        let className = `${this.name} ${this.name}--tripadvisor ${this.props.addClass}`
+        let className = `muk-icon ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>
-                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
-                     fill='currentColor'
+                {this.props.text && this.props.textFirst &&
+                    <span className={`muk-icon__text`}>
+                        {this.props.text}
+                    </span>
+                }
+                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                     fill={this.props.color}
+                     stroke={this.props.color}
+                     strokeWidth={0}
                      height={this.props.size}
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
                     <g><path d="m11.4 21.8q0 0.7-0.5 1.1t-1.1 0.5q-0.7 0-1.2-0.5t-0.5-1.1q0-0.7 0.5-1.2t1.2-0.5q0.6 0 1.1 0.5t0.5 1.2z m20.2 0q0 0.6-0.5 1.1t-1.1 0.5-1.2-0.5-0.5-1.1 0.5-1.2 1.2-0.5 1.1 0.5 0.5 1.1z m-18.2 0q0-1.4-1-2.4t-2.4-1-2.4 1-1 2.4 1 2.4 2.4 0.9 2.4-0.9 1-2.4z m20.2 0q0-1.5-1-2.4t-2.4-1q-1.4 0-2.4 1t-1 2.4 1 2.3 2.4 1 2.4-1 1-2.4z m-18.7 0q0 2-1.4 3.4t-3.5 1.5q-2 0-3.4-1.5t-1.5-3.4 1.5-3.5 3.4-1.4 3.5 1.4 1.4 3.5z m20.2 0q0 2-1.4 3.4t-3.5 1.4q-2 0-3.4-1.4t-1.5-3.4 1.5-3.5 3.4-1.4q2 0 3.5 1.4t1.4 3.5z m-16.9 0q0-3.3-2.4-5.7t-5.7-2.4q-2.2 0-4 1.1t-3 2.9-1.1 4.1 1.1 4.1 3 2.9 4 1.1q3.4 0 5.7-2.4t2.4-5.7z m11.7-10q-4.4-2-9.7-2-5.6 0-10.1 2 2.1 0 3.9 0.8t3.2 2.1 2.2 3.2 0.8 3.9q0-2 0.7-3.8t2.1-3.2 3.1-2.2 3.8-0.8z m8.4 10q0-3.3-2.4-5.7t-5.7-2.4-5.7 2.4-2.4 5.7 2.4 5.7 5.7 2.4 5.7-2.4 2.4-5.7z m-4.7-9.9h6.7q-0.7 0.9-1.3 2t-0.7 2q1.9 2.6 1.9 5.9 0 2.7-1.3 5t-3.7 3.7-5 1.3q-2.3 0-4.3-0.9t-3.5-2.8q-0.8 1-2.2 3.2-0.2-0.4-1-1.5t-1.3-1.7q-1.4 1.8-3.4 2.7t-4.4 1q-2.7 0-5-1.3t-3.7-3.7-1.3-5q0-3.3 1.9-5.9-0.1-0.9-0.7-2t-1.3-2h6.4q2.6-1.8 6.2-2.7t7.6-1q3.9 0 7.3 0.9t6.1 2.8z"></path></g>
                 </svg>
-                {this.props.text ? (
-                    <span className={`${this.name}__text`}>
+                {this.props.text && !this.props.textFirst && 
+                    <span className={`muk-icon__text`}>
                         {this.props.text}
                     </span>
-                ) : null}
+                }
             </span>
         )
     }

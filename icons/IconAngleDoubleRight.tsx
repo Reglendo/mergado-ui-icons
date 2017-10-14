@@ -9,6 +9,8 @@ export interface Props {
     style?: any
     addClass?: string
     viewBox?: string
+    color?: string
+    textFirst?: boolean
 }
 export interface State {
 }
@@ -23,26 +25,35 @@ class IconAngleDoubleRight extends React.Component<Props, State> {
         addClass: "",
         title: "",
         viewBox: "0 0 40 40",
+        color: 'currentColor',
+        textFirst: false,
     }
 
     render() {
-        let className = `${this.name} ${this.name}--angle-double-right ${this.props.addClass}`
+        let className = `muk-icon ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>
-                <svg className={`${this.name}__image`} preserveAspectRatio='xMidYMid meet'
-                     fill='currentColor'
+                {this.props.text && this.props.textFirst &&
+                    <span className={`muk-icon__text`}>
+                        {this.props.text}
+                    </span>
+                }
+                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                     fill={this.props.color}
+                     stroke={this.props.color}
+                     strokeWidth={0}
                      height={this.props.size}
                      width={this.props.size}
                      viewBox={this.props.viewBox}
                 >
                     <g><path d="m22.3 21.4q0 0.3-0.2 0.5l-10.4 10.4q-0.3 0.3-0.6 0.3t-0.5-0.3l-1.1-1.1q-0.2-0.2-0.2-0.5t0.2-0.5l8.8-8.8-8.8-8.7q-0.2-0.3-0.2-0.6t0.2-0.5l1.1-1.1q0.3-0.2 0.5-0.2t0.6 0.2l10.4 10.4q0.2 0.2 0.2 0.5z m8.6 0q0 0.3-0.3 0.5l-10.4 10.4q-0.2 0.3-0.5 0.3t-0.5-0.3l-1.1-1.1q-0.2-0.2-0.2-0.5t0.2-0.5l8.8-8.8-8.8-8.7q-0.2-0.3-0.2-0.6t0.2-0.5l1.1-1.1q0.2-0.2 0.5-0.2t0.5 0.2l10.4 10.4q0.3 0.2 0.3 0.5z"></path></g>
                 </svg>
-                {this.props.text ? (
-                    <span className={`${this.name}__text`}>
+                {this.props.text && !this.props.textFirst && 
+                    <span className={`muk-icon__text`}>
                         {this.props.text}
                     </span>
-                ) : null}
+                }
             </span>
         )
     }
