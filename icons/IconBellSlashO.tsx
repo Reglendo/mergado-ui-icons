@@ -30,7 +30,7 @@ class IconBellSlashO extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--bell-slash-o ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>

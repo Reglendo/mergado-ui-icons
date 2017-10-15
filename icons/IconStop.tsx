@@ -30,7 +30,7 @@ class IconStop extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--stop ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>

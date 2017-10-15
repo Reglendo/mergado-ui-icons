@@ -30,7 +30,7 @@ class IconMinusCircle extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--minus-circle ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>

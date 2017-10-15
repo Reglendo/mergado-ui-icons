@@ -30,7 +30,7 @@ class IconCodiepie extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--codiepie ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>

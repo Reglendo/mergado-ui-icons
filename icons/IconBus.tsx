@@ -30,7 +30,7 @@ class IconBus extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--bus ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>

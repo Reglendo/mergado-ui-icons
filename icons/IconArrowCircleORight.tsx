@@ -30,7 +30,7 @@ class IconArrowCircleORight extends React.Component<Props, State> {
     }
 
     render() {
-        let className = `muk-icon ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--arrow-circle-o-right ${this.props.addClass}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>
