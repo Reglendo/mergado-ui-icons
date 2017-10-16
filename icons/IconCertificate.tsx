@@ -11,6 +11,7 @@ export interface Props {
     viewBox?: string
     color?: string
     textFirst?: boolean
+    className?: string
 }
 export interface State {
 }
@@ -27,10 +28,11 @@ class IconCertificate extends React.Component<Props, State> {
         viewBox: "0 0 40 40",
         color: 'currentColor',
         textFirst: false,
+        className: "",
     }
 
     render() {
-        let className = `muk-icon ${this.name}--certificate ${this.props.addClass}`
+        let className = `muk-icon ${this.name}--certificate ${this.props.addClass} ${this.props.className}`
 
         return (
             <span className={className} style={this.props.style} title={this.props.title}>
