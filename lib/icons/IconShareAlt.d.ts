@@ -7,6 +7,9 @@ export interface Props {
     style?: any;
     addClass?: string;
     viewBox?: string;
+    color?: string;
+    textFirst?: boolean;
+    className?: string;
 }
 export interface State {
 }
