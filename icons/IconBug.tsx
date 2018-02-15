@@ -1,26 +1,36 @@
 
-
 import * as React from "react"
 
-export interface Props {
-    size?: number
-    text?: string
-    title?: string
-    style?: any
-    addClass?: string
-    viewBox?: string
-    color?: string
-    textFirst?: boolean
-    className?: string
+export const IconBug: React.SFC<any> = props => {
+    const name = "muk-icon";
+    const className = `muk-icon ${name}--bug ${props.addClass} ${props.className}`
+    return (
+            <span className={className} style={props.style} title={props.title}>
+                {props.text && props.textFirst &&
+                    <span className={`muk-icon__text`}>
+                        {props.text}
+                    </span>
+                }
+                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                     fill={props.color}
+                     stroke={props.color}
+                     strokeWidth={0}
+                     height={props.size}
+                     width={props.size}
+                     viewBox={props.viewBox}
+                >
+                    <g><path d="M37.9 21.4q0 .6-.4 1t-1 .5h-5q0 3.8-1.5 6.4l4.6 4.7q.5.4.5 1t-.5 1q-.4.4-1 .4t-1-.4l-4.4-4.4-.3.3q-.2.2-1 .6t-1.4.8-1.8.7-2.2.3v-20h-2.9v20q-1.1 0-2.2-.3t-2-.8-1.4-.8-1-.8l-.3-.3L7.6 36q-.5.4-1.1.4-.5 0-1-.3-.4-.4-.4-1t.3-1.1l4.5-5q-1.3-2.6-1.3-6.1h-5q-.5 0-1-.5t-.4-1 .4-1 1-.4h5v-6.6L4.8 9.6q-.4-.4-.4-1t.4-1 1-.5 1 .5l3.8 3.8h18.9l3.9-3.8q.4-.5 1-.5t1 .5.4 1-.4 1l-3.9 3.8V20h5q.6 0 1 .4t.4 1zM27.2 8.6H12.9q0-3 2.1-5.1t5.1-2.1 5 2.1 2.1 5.1z"></path></g>
+                </svg>
+                {props.text && !props.textFirst && 
+                    <span className={`muk-icon__text`}>
+                        {props.text}
+                    </span>
+                }
+            </span>
+        )
 }
-export interface State {
-}
 
-class IconBug extends React.Component<Props, State> {
-
-    readonly name = "muk-icon";
-
-    public static defaultProps: Props = {
+IconBug.defaultProps = {
         size: 15,
         style: {},
         addClass: "",
@@ -29,37 +39,4 @@ class IconBug extends React.Component<Props, State> {
         color: 'currentColor',
         textFirst: false,
         className: "",
-    }
-
-    render() {
-        let className = `muk-icon ${this.name}--bug ${this.props.addClass} ${this.props.className}`
-
-        return (
-            <span className={className} style={this.props.style} title={this.props.title}>
-                {this.props.text && this.props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {this.props.text}
-                    </span>
-                }
-                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
-                     fill={this.props.color}
-                     stroke={this.props.color}
-                     strokeWidth={0}
-                     height={this.props.size}
-                     width={this.props.size}
-                     viewBox={this.props.viewBox}
-                >
-                    <g><path d="M37.9 21.4q0 .6-.4 1t-1 .5h-5q0 3.8-1.5 6.4l4.6 4.7q.5.4.5 1t-.5 1q-.4.4-1 .4t-1-.4l-4.4-4.4-.3.3q-.2.2-1 .6t-1.4.8-1.8.7-2.2.3v-20h-2.9v20q-1.1 0-2.2-.3t-2-.8-1.4-.8-1-.8l-.3-.3L7.6 36q-.5.4-1.1.4-.5 0-1-.3-.4-.4-.4-1t.3-1.1l4.5-5q-1.3-2.6-1.3-6.1h-5q-.5 0-1-.5t-.4-1 .4-1 1-.4h5v-6.6L4.8 9.6q-.4-.4-.4-1t.4-1 1-.5 1 .5l3.8 3.8h18.9l3.9-3.8q.4-.5 1-.5t1 .5.4 1-.4 1l-3.9 3.8V20h5q.6 0 1 .4t.4 1zM27.2 8.6H12.9q0-3 2.1-5.1t5.1-2.1 5 2.1 2.1 5.1z"></path></g>
-                </svg>
-                {this.props.text && !this.props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {this.props.text}
-                    </span>
-                }
-            </span>
-        )
-    }
 }
-
-export default IconBug
-

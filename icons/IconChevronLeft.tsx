@@ -1,26 +1,36 @@
 
-
 import * as React from "react"
 
-export interface Props {
-    size?: number
-    text?: string
-    title?: string
-    style?: any
-    addClass?: string
-    viewBox?: string
-    color?: string
-    textFirst?: boolean
-    className?: string
+export const IconChevronLeft: React.SFC<any> = props => {
+    const name = "muk-icon";
+    const className = `muk-icon ${name}--chevron-left ${props.addClass} ${props.className}`
+    return (
+            <span className={className} style={props.style} title={props.title}>
+                {props.text && props.textFirst &&
+                    <span className={`muk-icon__text`}>
+                        {props.text}
+                    </span>
+                }
+                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                     fill={props.color}
+                     stroke={props.color}
+                     strokeWidth={0}
+                     height={props.size}
+                     width={props.size}
+                     viewBox={props.viewBox}
+                >
+                    <g><path d="M31.1 6.7L19.3 18.6l11.8 11.8q.5.4.5 1t-.5 1l-3.7 3.7q-.4.5-1 .5t-1-.5L8.9 19.6q-.5-.4-.5-1t.5-1L25.4 1q.5-.4 1-.4t1 .4l3.7 3.7q.5.4.5 1t-.5 1z"></path></g>
+                </svg>
+                {props.text && !props.textFirst && 
+                    <span className={`muk-icon__text`}>
+                        {props.text}
+                    </span>
+                }
+            </span>
+        )
 }
-export interface State {
-}
 
-class IconChevronLeft extends React.Component<Props, State> {
-
-    readonly name = "muk-icon";
-
-    public static defaultProps: Props = {
+IconChevronLeft.defaultProps = {
         size: 15,
         style: {},
         addClass: "",
@@ -29,37 +39,4 @@ class IconChevronLeft extends React.Component<Props, State> {
         color: 'currentColor',
         textFirst: false,
         className: "",
-    }
-
-    render() {
-        let className = `muk-icon ${this.name}--chevron-left ${this.props.addClass} ${this.props.className}`
-
-        return (
-            <span className={className} style={this.props.style} title={this.props.title}>
-                {this.props.text && this.props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {this.props.text}
-                    </span>
-                }
-                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
-                     fill={this.props.color}
-                     stroke={this.props.color}
-                     strokeWidth={0}
-                     height={this.props.size}
-                     width={this.props.size}
-                     viewBox={this.props.viewBox}
-                >
-                    <g><path d="M31.1 6.7L19.3 18.6l11.8 11.8q.5.4.5 1t-.5 1l-3.7 3.7q-.4.5-1 .5t-1-.5L8.9 19.6q-.5-.4-.5-1t.5-1L25.4 1q.5-.4 1-.4t1 .4l3.7 3.7q.5.4.5 1t-.5 1z"></path></g>
-                </svg>
-                {this.props.text && !this.props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {this.props.text}
-                    </span>
-                }
-            </span>
-        )
-    }
 }
-
-export default IconChevronLeft
-

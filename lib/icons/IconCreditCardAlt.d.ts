@@ -1,21 +1,3 @@
 /// <reference types="react" />
 import * as React from "react";
-export interface Props {
-    size?: number;
-    text?: string;
-    title?: string;
-    style?: any;
-    addClass?: string;
-    viewBox?: string;
-    color?: string;
-    textFirst?: boolean;
-    className?: string;
-}
-export interface State {
-}
-declare class IconCreditCardAlt extends React.Component<Props, State> {
-    readonly name: string;
-    static defaultProps: Props;
-    render(): JSX.Element;
-}
-export default IconCreditCardAlt;
+export declare const IconCreditCardAlt: React.SFC<any>;
