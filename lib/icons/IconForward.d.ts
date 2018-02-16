@@ -12,6 +12,7 @@ export interface Props {
     className?: string;
 }
 declare class IconForward extends React.PureComponent<Props, {}> {
+    shouldComponentUpdate(): boolean;
     static defaultProps: Props;
     render(): JSX.Element;
 }

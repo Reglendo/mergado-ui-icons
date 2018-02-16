@@ -13,6 +13,7 @@ export interface Props {
 }
 
 class IconSearchMinus extends React.PureComponent<Props, {}> {
+    shouldComponentUpdate() { return false }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

@@ -71,6 +71,7 @@ export interface Props {
 }
 
 class ${name} extends React.PureComponent<Props, {}> {
+    shouldComponentUpdate() { return false }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

@@ -12,6 +12,7 @@ export interface Props {
     className?: string;
 }
 declare class IconMeanpath extends React.PureComponent<Props, {}> {
+    shouldComponentUpdate(): boolean;
     static defaultProps: Props;
     render(): JSX.Element;
 }
