@@ -1,30 +1,44 @@
 
 import * as React from "react"
-
-export const IconHintInfo: React.SFC<any> = props => {
-    const name = "muk-icon";
-    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
-    const className = `muk-icon ${name}--hint-info ${props.addClass} ${props.className}`
-    return (
-            <span className={className} style={props.style} title={props.title}>
-                {props.textFirst && textEl }
-                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
-                     fill={props.color}
-                     stroke={props.color}
-                     strokeWidth={0}
-                     height={props.size}
-                     width={props.size}
-                     viewBox={props.viewBox}
-                >
-                    <g><path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm3.826 5.568c.605 0 1.115.208 1.512.614.394.404.594.922.594 1.539a3.078 3.078 0 0 1-.836 2.127c-.564.62-1.218.933-1.94.933a1.98 1.98 0 0 1-1.488-.629c-.392-.41-.59-.945-.59-1.593 0-.82.27-1.529.8-2.106.542-.587 1.195-.885 1.948-.885zM22.2 12.691c.603 0 1.084.144 1.428.428.362.3.555.723.555 1.223 0 .323-.164 1.297-1.57 6.006-1.67 5.604-2.516 9.015-2.516 10.136a.528.528 0 0 0 .09.323.39.39 0 0 0 .05.06c.442-.087 2.692-1.08 4.674-2.017a.403.403 0 0 1 .504.136v.002a.403.403 0 0 1-.057.52c-2.23 2.1-3.822 3.412-4.865 4.008-1.077.616-1.95.916-2.668.916-.673 0-1.218-.222-1.623-.657-.398-.425-.6-1.009-.6-1.734 0-2.056 1.182-6.883 3.612-14.754.1-.327.148-.616.148-.861a.41.41 0 0 0-.006-.076h-.021c-.241 0-.537.108-.877.322-.415.26-3.266 1.426-3.834 1.658a.403.403 0 0 1-.45-.642c1.616-1.78 3.119-3.07 4.466-3.83 1.39-.785 2.555-1.167 3.56-1.167z"></path></g>
-                </svg>
-                {!props.textFirst && textEl }
-            </span>
-        )
+export interface Props { 
+    size?: number 
+    text?: string 
+    title?: string 
+    style?: any 
+    addClass?: string 
+    viewBox?: string 
+    color?: string 
+    textFirst?: boolean 
+    className?: string 
 }
-IconHintInfo.defaultProps = {
+
+class IconHintInfo extends React.PureComponent<Props, {}> {
+    public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",
         color: 'currentColor',
+    }
+    render() {
+        const p = this.props
+        const name = "muk-icon";
+        const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
+        const className = `muk-icon ${name}--hint-info ${p.addClass} ${p.className}`
+        return (
+                <span className={className} style={p.style} title={p.title}>
+                    {p.textFirst && textEl }
+                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                        fill={p.color}
+                        stroke={p.color}
+                        strokeWidth={0}
+                        height={p.size}
+                        width={p.size}
+                        viewBox={p.viewBox}
+                    >
+                        <g><path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm3.826 5.568c.605 0 1.115.208 1.512.614.394.404.594.922.594 1.539a3.078 3.078 0 0 1-.836 2.127c-.564.62-1.218.933-1.94.933a1.98 1.98 0 0 1-1.488-.629c-.392-.41-.59-.945-.59-1.593 0-.82.27-1.529.8-2.106.542-.587 1.195-.885 1.948-.885zM22.2 12.691c.603 0 1.084.144 1.428.428.362.3.555.723.555 1.223 0 .323-.164 1.297-1.57 6.006-1.67 5.604-2.516 9.015-2.516 10.136a.528.528 0 0 0 .09.323.39.39 0 0 0 .05.06c.442-.087 2.692-1.08 4.674-2.017a.403.403 0 0 1 .504.136v.002a.403.403 0 0 1-.057.52c-2.23 2.1-3.822 3.412-4.865 4.008-1.077.616-1.95.916-2.668.916-.673 0-1.218-.222-1.623-.657-.398-.425-.6-1.009-.6-1.734 0-2.056 1.182-6.883 3.612-14.754.1-.327.148-.616.148-.861a.41.41 0 0 0-.006-.076h-.021c-.241 0-.537.108-.877.322-.415.26-3.266 1.426-3.834 1.658a.403.403 0 0 1-.45-.642c1.616-1.78 3.119-3.07 4.466-3.83 1.39-.785 2.555-1.167 3.56-1.167z"></path></g>
+                    </svg>
+                    {!p.textFirst && textEl }
+                </span>
+            )
+    }
 }
 export default IconHintInfo;

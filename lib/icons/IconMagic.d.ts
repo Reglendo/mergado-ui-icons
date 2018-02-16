@@ -1,4 +1,18 @@
 /// <reference types="react" />
 import * as React from "react";
-export declare const IconMagic: React.SFC<any>;
+export interface Props {
+    size?: number;
+    text?: string;
+    title?: string;
+    style?: any;
+    addClass?: string;
+    viewBox?: string;
+    color?: string;
+    textFirst?: boolean;
+    className?: string;
+}
+declare class IconMagic extends React.PureComponent<Props, {}> {
+    static defaultProps: Props;
+    render(): JSX.Element;
+}
 export default IconMagic;

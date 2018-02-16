@@ -1,30 +1,44 @@
 
 import * as React from "react"
-
-export const IconArrowRight: React.SFC<any> = props => {
-    const name = "muk-icon";
-    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
-    const className = `muk-icon ${name}--arrow-right ${props.addClass} ${props.className}`
-    return (
-            <span className={className} style={props.style} title={props.title}>
-                {props.textFirst && textEl }
-                <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
-                     fill={props.color}
-                     stroke={props.color}
-                     strokeWidth={0}
-                     height={props.size}
-                     width={props.size}
-                     viewBox={props.viewBox}
-                >
-                    <g><path d="M36.4 21.4q0 1.2-.9 2.1L21 38q-.9.8-2 .8-1.2 0-2-.8l-1.7-1.7q-.9-.8-.9-2t.9-2l6.5-6.6H6.1q-1.1 0-1.9-.8t-.7-2V20q0-1.2.7-2t1.9-.9h15.7l-6.5-6.5q-.9-.8-.9-2t.9-2L17 4.9q.8-.9 2-.9t2 .9l14.5 14.5q.9.8.9 2z"></path></g>
-                </svg>
-                {!props.textFirst && textEl }
-            </span>
-        )
+export interface Props { 
+    size?: number 
+    text?: string 
+    title?: string 
+    style?: any 
+    addClass?: string 
+    viewBox?: string 
+    color?: string 
+    textFirst?: boolean 
+    className?: string 
 }
-IconArrowRight.defaultProps = {
+
+class IconArrowRight extends React.PureComponent<Props, {}> {
+    public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",
         color: 'currentColor',
+    }
+    render() {
+        const p = this.props
+        const name = "muk-icon";
+        const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
+        const className = `muk-icon ${name}--arrow-right ${p.addClass} ${p.className}`
+        return (
+                <span className={className} style={p.style} title={p.title}>
+                    {p.textFirst && textEl }
+                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                        fill={p.color}
+                        stroke={p.color}
+                        strokeWidth={0}
+                        height={p.size}
+                        width={p.size}
+                        viewBox={p.viewBox}
+                    >
+                        <g><path d="M36.4 21.4q0 1.2-.9 2.1L21 38q-.9.8-2 .8-1.2 0-2-.8l-1.7-1.7q-.9-.8-.9-2t.9-2l6.5-6.6H6.1q-1.1 0-1.9-.8t-.7-2V20q0-1.2.7-2t1.9-.9h15.7l-6.5-6.5q-.9-.8-.9-2t.9-2L17 4.9q.8-.9 2-.9t2 .9l14.5 14.5q.9.8.9 2z"></path></g>
+                    </svg>
+                    {!p.textFirst && textEl }
+                </span>
+            )
+    }
 }
 export default IconArrowRight;
