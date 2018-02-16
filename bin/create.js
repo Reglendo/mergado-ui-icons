@@ -58,6 +58,7 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
         iconSvg = iconSvg.match(/(<(g|path).*<\/(g|path)>)/g)[0].replace(/inkscape\:.*?\".*?\"/g,'')
         var component = `
 import * as React from "react"
+import shallowCompare from "shallow-compare"
 export interface Props { 
     size?: number 
     text?: string 
@@ -71,7 +72,7 @@ export interface Props {
 }
 
 class ${name} extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate() { return false }
+    shouldComponentUpdate(nextProps) { return shallowCompare(this,this.props,nextProps) }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

@@ -12,7 +12,7 @@ export interface Props {
     className?: string;
 }
 declare class IconWpforms extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate(): boolean;
+    shouldComponentUpdate(nextProps: any): any;
     static defaultProps: Props;
     render(): JSX.Element;
 }

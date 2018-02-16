@@ -1,5 +1,6 @@
 
 import * as React from "react"
+import shallowCompare from "shallow-compare"
 export interface Props { 
     size?: number 
     text?: string 
@@ -13,7 +14,7 @@ export interface Props {
 }
 
 class IconPlusCircle extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate() { return false }
+    shouldComponentUpdate(nextProps) { return shallowCompare(this,this.props,nextProps) }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",
