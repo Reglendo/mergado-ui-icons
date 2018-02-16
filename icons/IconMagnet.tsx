@@ -3,14 +3,11 @@ import * as React from "react"
 
 export const IconMagnet: React.SFC<any> = props => {
     const name = "muk-icon";
+    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
     const className = `muk-icon ${name}--magnet ${props.addClass} ${props.className}`
     return (
             <span className={className} style={props.style} title={props.title}>
-                {props.text && props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {props.textFirst && textEl }
                 <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
                      fill={props.color}
                      stroke={props.color}
@@ -21,22 +18,13 @@ export const IconMagnet: React.SFC<any> = props => {
                 >
                     <g><path d="M37.3 18.6v2.8q0 4.5-2.2 8.1T29 35.1t-8.9 2-8.8-2-6.1-5.6T3 21.4v-2.8q0-.6.4-1t1-.5H13q.6 0 1 .5t.4 1v2.8q0 1.2.6 2t1.1 1.3 1.6.7 1.5.3.9 0 1 0 1.5-.3 1.5-.7 1.2-1.3.6-2v-2.8q0-.6.4-1t1-.5h8.6q.5 0 1 .5t.4 1zM14.4 4.3v8.6q0 .5-.4 1t-1 .4H4.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4H13q.6 0 1 .4t.4 1zm22.9 0v8.6q0 .5-.4 1t-1 .4h-8.6q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h8.6q.5 0 1 .4t.4 1z"></path></g>
                 </svg>
-                {props.text && !props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {!props.textFirst && textEl }
             </span>
         )
 }
-
 IconMagnet.defaultProps = {
         size: 15,
-        style: {},
-        addClass: "",
-        title: "",
         viewBox: "0 0 40 40",
         color: 'currentColor',
-        textFirst: false,
-        className: "",
 }
+export default IconMagnet;

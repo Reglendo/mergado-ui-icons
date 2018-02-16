@@ -3,14 +3,11 @@ import * as React from "react"
 
 export const IconStrikethrough: React.SFC<any> = props => {
     const name = "muk-icon";
+    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
     const className = `muk-icon ${name}--strikethrough ${props.addClass} ${props.className}`
     return (
             <span className={className} style={props.style} title={props.title}>
-                {props.text && props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {props.textFirst && textEl }
                 <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
                      fill={props.color}
                      stroke={props.color}
@@ -21,22 +18,13 @@ export const IconStrikethrough: React.SFC<any> = props => {
                 >
                     <g><path d="M39.3 20q.3 0 .5.2t.2.5v1.4q0 .4-.2.6t-.5.2H.7q-.3 0-.5-.2t-.2-.6v-1.4q0-.3.2-.5t.5-.2h38.6zm-28.5-1.4q-.6-.8-1.2-1.8-1-2.2-1-4.2 0-4.1 3-6.9 2.9-2.8 8.7-2.8 1.2 0 3.8.4 1.4.3 3.9 1.1.2.8.5 2.6.3 2.7.3 4.1 0 .4-.1 1h-.3l-1.9-.1h-.3q-1.1-3.4-2.3-4.6-1.9-2-4.7-2-2.5 0-4 1.3t-1.5 3.2q0 1.7 1.5 3.2t6.2 2.8q1.5.5 3.8 1.5 1.3.6 2.2 1.2H10.8zm11.3 5.7h9.2q.1.9.1 2 0 2.5-.9 4.8-.5 1.2-1.6 2.3-.8.8-2.4 1.8-1.8 1.1-3.4 1.5-1.8.4-4.5.4-2.6 0-4.4-.5l-3.1-.9q-1.3-.3-1.6-.6-.2-.2-.2-.5v-.3q0-2.4-.1-3.5v-1.5l.1-.8v-1h2.3q.3.7.6 1.6t.5 1.2.3.6q.8 1.3 1.8 2.1t2.3 1.3q1.4.5 3 .5 1.4 0 3.1-.6 1.7-.6 2.7-1.9 1.1-1.4 1.1-2.9 0-1.9-1.8-3.5-.8-.7-3.1-1.6z"></path></g>
                 </svg>
-                {props.text && !props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {!props.textFirst && textEl }
             </span>
         )
 }
-
 IconStrikethrough.defaultProps = {
         size: 15,
-        style: {},
-        addClass: "",
-        title: "",
         viewBox: "0 0 40 40",
         color: 'currentColor',
-        textFirst: false,
-        className: "",
 }
+export default IconStrikethrough;

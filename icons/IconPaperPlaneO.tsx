@@ -3,14 +3,11 @@ import * as React from "react"
 
 export const IconPaperPlaneO: React.SFC<any> = props => {
     const name = "muk-icon";
+    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
     const className = `muk-icon ${name}--paper-plane-o ${props.addClass} ${props.className}`
     return (
             <span className={className} style={props.style} title={props.title}>
-                {props.text && props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {props.textFirst && textEl }
                 <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
                      fill={props.color}
                      stroke={props.color}
@@ -21,22 +18,13 @@ export const IconPaperPlaneO: React.SFC<any> = props => {
                 >
                     <g><path d="M39.4.2q.7.6.6 1.5L34.3 36q-.1.6-.7 1-.4.1-.7.1-.3 0-.6-.1l-11.7-4.8-6.7 7.3q-.4.5-1 .5-.4 0-.6-.1-.4-.1-.6-.5t-.3-.8V28.5L.9 24.2q-.8-.3-.9-1.3-.1-.8.7-1.3L37.9.2q.7-.5 1.5 0zm-7.7 33.5l5-29.5-32 18.4 7.5 3.1 19.2-14.3-10.6 17.8z"></path></g>
                 </svg>
-                {props.text && !props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {!props.textFirst && textEl }
             </span>
         )
 }
-
 IconPaperPlaneO.defaultProps = {
         size: 15,
-        style: {},
-        addClass: "",
-        title: "",
         viewBox: "0 0 40 40",
         color: 'currentColor',
-        textFirst: false,
-        className: "",
 }
+export default IconPaperPlaneO;

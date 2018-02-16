@@ -3,14 +3,11 @@ import * as React from "react"
 
 export const IconArchive: React.SFC<any> = props => {
     const name = "muk-icon";
+    const textEl = props.text ? <span className={`muk-icon__text`}>{props.text}</span> : false
     const className = `muk-icon ${name}--archive ${props.addClass} ${props.className}`
     return (
             <span className={className} style={props.style} title={props.title}>
-                {props.text && props.textFirst &&
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {props.textFirst && textEl }
                 <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
                      fill={props.color}
                      stroke={props.color}
@@ -21,22 +18,13 @@ export const IconArchive: React.SFC<any> = props => {
                 >
                     <g><path d="M24.3 18.6q0-.6-.4-1t-1-.5h-5.8q-.5 0-1 .5t-.4 1 .4 1 1 .4h5.8q.5 0 1-.4t.4-1zm12.8-4.3v21.4q0 .6-.4 1t-1 .4H4.3q-.6 0-1-.4t-.4-1V14.3q0-.6.4-1t1-.4h31.4q.6 0 1 .4t.4 1zm1.5-10V10q0 .6-.5 1t-1 .4H2.9q-.6 0-1-.4t-.5-1V4.3q0-.6.5-1t1-.4h34.2q.6 0 1 .4t.5 1z"></path></g>
                 </svg>
-                {props.text && !props.textFirst && 
-                    <span className={`muk-icon__text`}>
-                        {props.text}
-                    </span>
-                }
+                {!props.textFirst && textEl }
             </span>
         )
 }
-
 IconArchive.defaultProps = {
         size: 15,
-        style: {},
-        addClass: "",
-        title: "",
         viewBox: "0 0 40 40",
         color: 'currentColor',
-        textFirst: false,
-        className: "",
 }
+export default IconArchive;

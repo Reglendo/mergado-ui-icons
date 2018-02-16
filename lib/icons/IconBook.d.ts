@@ -1,3 +1,4 @@
 /// <reference types="react" />
 import * as React from "react";
 export declare const IconBook: React.SFC<any>;
+export default IconBook;
