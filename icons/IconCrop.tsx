@@ -24,11 +24,11 @@ class IconCrop extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--crop ${p.addClass} ${p.className}`
+        const className = `muk-icon m--crop ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconCrop extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M13.9 28.6h13.3V15.3zm-1-1l13.3-13.3H12.9v13.3zm25.7 1.7v4.3q0 .3-.2.5t-.5.2h-5v5q0 .3-.2.5t-.5.2h-4.3q-.3 0-.5-.2t-.2-.5v-5H7.9q-.3 0-.5-.2t-.2-.5V14.3h-5q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h5v-5q0-.3.2-.5t.5-.2h4.3q.3 0 .5.2t.2.5v5h19l5.5-5.5q.2-.2.5-.2t.5.2q.2.2.2.5t-.2.5l-5.5 5.5v19h5q.3 0 .5.2t.2.5z"></path></g>
+                        <g className={`m-group`}><path d="M13.9 28.6h13.3V15.3zm-1-1l13.3-13.3H12.9v13.3zm25.7 1.7v4.3q0 .3-.2.5t-.5.2h-5v5q0 .3-.2.5t-.5.2h-4.3q-.3 0-.5-.2t-.2-.5v-5H7.9q-.3 0-.5-.2t-.2-.5V14.3h-5q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h5v-5q0-.3.2-.5t.5-.2h4.3q.3 0 .5.2t.2.5v5h19l5.5-5.5q.2-.2.5-.2t.5.2q.2.2.2.5t-.2.5l-5.5 5.5v19h5q.3 0 .5.2t.2.5z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

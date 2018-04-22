@@ -24,11 +24,11 @@ class IconQuoteLeft extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--quote-left ${p.addClass} ${p.className}`
+        const className = `muk-icon m--quote-left ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconQuoteLeft extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M18.6 21.4V30q0 1.8-1.2 3t-3 1.3H5.8q-1.8 0-3-1.3t-1.3-3V14.3q0-2.3.9-4.4t2.4-3.7 3.7-2.4 4.4-.9h1.5q.5 0 1 .4t.4 1v2.8q0 .6-.4 1t-1 .5h-1.5q-2.3 0-4 1.6t-1.7 4.1v.7q0 .9.6 1.5t1.6.6h5q1.7 0 3 1.3t1.2 3zm20 0V30q0 1.8-1.2 3t-3 1.3h-8.6q-1.8 0-3-1.3t-1.3-3V14.3q0-2.3.9-4.4t2.4-3.7 3.7-2.4 4.4-.9h1.5q.5 0 1 .4t.4 1v2.8q0 .6-.4 1t-1 .5h-1.5q-2.3 0-4 1.6t-1.7 4.1v.7q0 .9.6 1.5t1.6.6h5q1.7 0 3 1.3t1.2 3z"></path></g>
+                        <g className={`m-group`}><path d="M18.6 21.4V30q0 1.8-1.2 3t-3 1.3H5.8q-1.8 0-3-1.3t-1.3-3V14.3q0-2.3.9-4.4t2.4-3.7 3.7-2.4 4.4-.9h1.5q.5 0 1 .4t.4 1v2.8q0 .6-.4 1t-1 .5h-1.5q-2.3 0-4 1.6t-1.7 4.1v.7q0 .9.6 1.5t1.6.6h5q1.7 0 3 1.3t1.2 3zm20 0V30q0 1.8-1.2 3t-3 1.3h-8.6q-1.8 0-3-1.3t-1.3-3V14.3q0-2.3.9-4.4t2.4-3.7 3.7-2.4 4.4-.9h1.5q.5 0 1 .4t.4 1v2.8q0 .6-.4 1t-1 .5h-1.5q-2.3 0-4 1.6t-1.7 4.1v.7q0 .9.6 1.5t1.6.6h5q1.7 0 3 1.3t1.2 3z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

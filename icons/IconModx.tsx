@@ -24,11 +24,11 @@ class IconModx extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--modx ${p.addClass} ${p.className}`
+        const className = `muk-icon m--modx ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconModx extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M31.9 15.8L18.1 7.2l2.1-3.4h19.1zM9 21.7l-4.1-2.5V0l26.4 16.6zm22.8-3l3.3 2.1V40l-11.9-7.5zm-.8-.4L19.8 36.2H.7l8-12.8z"></path></g>
+                        <g className={`m-group`}><path d="M31.9 15.8L18.1 7.2l2.1-3.4h19.1zM9 21.7l-4.1-2.5V0l26.4 16.6zm22.8-3l3.3 2.1V40l-11.9-7.5zm-.8-.4L19.8 36.2H.7l8-12.8z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

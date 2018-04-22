@@ -24,11 +24,11 @@ class IconSkyatlas extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--skyatlas ${p.addClass} ${p.className}`
+        const className = `muk-icon m--skyatlas ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconSkyatlas extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M32.8 17.9q2.9 0 4.9 1.9t2.1 4.7q0 3.1-2.2 5.1t-5.1 2q-1.7 0-3.2-.5t-2.7-1.4-2.3-2.1-2.1-2.4-2-2.6-2.1-2.4-2.3-2.1-2.6-1.4-3.1-.6q-3 0-4.9 1.8t-1.9 4.8q0 3 2.1 4.8t5.1 1.8q1.9 0 4-.7t3.7-1.9q.1-.1.5-.4t.5-.5.5-.1q.2 0 .4.2t.2.4q0 .5-1.1 1.5-2 1.7-4.6 2.8t-5 1q-2.6 0-4.8-1.1t-3.5-3.2T0 22.6q0-3.9 2.7-6.6t6.8-2.6q2.3 0 4.4.8t3.6 2.2 2.9 3 2.7 3.2 2.6 3 2.9 2.2 3.4.9q1.9 0 3.2-1.2t1.3-3.2q0-1.8-1.2-3.1T32.2 20q-.6 0-1.6.3t-1.3.4q-.4 0-.7-.3t-.3-.7q0-.3.1-1.1t.2-1.1q0-3.1-2.1-5.1t-5.1-2.1q-1.2 0-2.2.4t-1.6.8-1.1.8-.7.3q-.3 0-.5-.2t-.2-.5q0-.3.5-.9 1.2-1.3 2.9-2t3.5-.7q3.7 0 6.2 2.5t2.5 6.1q0 .7-.1 1.3 1.1-.3 2.2-.3z"></path></g>
+                        <g className={`m-group`}><path d="M32.8 17.9q2.9 0 4.9 1.9t2.1 4.7q0 3.1-2.2 5.1t-5.1 2q-1.7 0-3.2-.5t-2.7-1.4-2.3-2.1-2.1-2.4-2-2.6-2.1-2.4-2.3-2.1-2.6-1.4-3.1-.6q-3 0-4.9 1.8t-1.9 4.8q0 3 2.1 4.8t5.1 1.8q1.9 0 4-.7t3.7-1.9q.1-.1.5-.4t.5-.5.5-.1q.2 0 .4.2t.2.4q0 .5-1.1 1.5-2 1.7-4.6 2.8t-5 1q-2.6 0-4.8-1.1t-3.5-3.2T0 22.6q0-3.9 2.7-6.6t6.8-2.6q2.3 0 4.4.8t3.6 2.2 2.9 3 2.7 3.2 2.6 3 2.9 2.2 3.4.9q1.9 0 3.2-1.2t1.3-3.2q0-1.8-1.2-3.1T32.2 20q-.6 0-1.6.3t-1.3.4q-.4 0-.7-.3t-.3-.7q0-.3.1-1.1t.2-1.1q0-3.1-2.1-5.1t-5.1-2.1q-1.2 0-2.2.4t-1.6.8-1.1.8-.7.3q-.3 0-.5-.2t-.2-.5q0-.3.5-.9 1.2-1.3 2.9-2t3.5-.7q3.7 0 6.2 2.5t2.5 6.1q0 .7-.1 1.3 1.1-.3 2.2-.3z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

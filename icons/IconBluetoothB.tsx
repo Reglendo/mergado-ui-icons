@@ -24,11 +24,11 @@ class IconBluetoothB extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--bluetooth-b ${p.addClass} ${p.className}`
+        const className = `muk-icon m--bluetooth-b ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconBluetoothB extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M21.8 31.8l3.9-3.9-3.9-3.8v7.7zm0-15.9l3.9-3.8-3.9-3.9v7.7zm.7 4.1l8 7.9L18.4 40V24.1l-6.6 6.6-2.4-2.4 8.3-8.3-8.3-8.3 2.4-2.4 6.6 6.6V0l12.1 12.1z"></path></g>
+                        <g className={`m-group`}><path d="M21.8 31.8l3.9-3.9-3.9-3.8v7.7zm0-15.9l3.9-3.8-3.9-3.9v7.7zm.7 4.1l8 7.9L18.4 40V24.1l-6.6 6.6-2.4-2.4 8.3-8.3-8.3-8.3 2.4-2.4 6.6 6.6V0l12.1 12.1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

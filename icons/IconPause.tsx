@@ -24,11 +24,11 @@ class IconPause extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--pause ${p.addClass} ${p.className}`
+        const className = `muk-icon m--pause ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconPause extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M37.3 4.3v31.4q0 .6-.4 1t-1 .4H24.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h11.5q.5 0 1 .4t.4 1zm-20 0v31.4q0 .6-.4 1t-1 .4H4.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h11.5q.5 0 1 .4t.4 1z"></path></g>
+                        <g className={`m-group`}><path d="M37.3 4.3v31.4q0 .6-.4 1t-1 .4H24.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h11.5q.5 0 1 .4t.4 1zm-20 0v31.4q0 .6-.4 1t-1 .4H4.4q-.6 0-1-.4t-.4-1V4.3q0-.6.4-1t1-.4h11.5q.5 0 1 .4t.4 1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

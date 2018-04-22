@@ -24,11 +24,11 @@ class IconMapPin extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--map-pin ${p.addClass} ${p.className}`
+        const className = `muk-icon m--map-pin ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconMapPin extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M19.9 24.3q1.5 0 2.9-.3v14.6q0 .6-.4 1t-1 .4h-2.9q-.6 0-1-.4t-.4-1V24q1.3.3 2.8.3zm0-24.3q4.8 0 8.1 3.3t3.4 8.1-3.4 8.1-8.1 3.4-8.1-3.4-3.3-8.1 3.3-8.1T19.9 0zm0 5q.3 0 .5-.2t.2-.5-.2-.5-.5-.2q-3.2 0-5.5 2.3t-2.3 5.5q0 .3.2.5t.5.2.5-.2.2-.5q0-2.6 1.9-4.5T19.9 5z"></path></g>
+                        <g className={`m-group`}><path d="M19.9 24.3q1.5 0 2.9-.3v14.6q0 .6-.4 1t-1 .4h-2.9q-.6 0-1-.4t-.4-1V24q1.3.3 2.8.3zm0-24.3q4.8 0 8.1 3.3t3.4 8.1-3.4 8.1-8.1 3.4-8.1-3.4-3.3-8.1 3.3-8.1T19.9 0zm0 5q.3 0 .5-.2t.2-.5-.2-.5-.5-.2q-3.2 0-5.5 2.3t-2.3 5.5q0 .3.2.5t.5.2.5-.2.2-.5q0-2.6 1.9-4.5T19.9 5z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

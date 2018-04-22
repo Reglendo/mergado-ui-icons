@@ -24,11 +24,11 @@ class IconWindows extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--windows ${p.addClass} ${p.className}`
+        const className = `muk-icon m--windows ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconWindows extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M16.7 22.5V37L1.5 34.9V22.5h15.2zm0-16.6v14.7H1.5V8zm21.9 16.6V40l-20.2-2.8V22.5h20.2zm0-19.6v17.7H18.4v-15z"></path></g>
+                        <g className={`m-group`}><path d="M16.7 22.5V37L1.5 34.9V22.5h15.2zm0-16.6v14.7H1.5V8zm21.9 16.6V40l-20.2-2.8V22.5h20.2zm0-19.6v17.7H18.4v-15z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

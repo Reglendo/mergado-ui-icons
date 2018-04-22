@@ -24,11 +24,11 @@ class IconDeviantart extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--deviantart ${p.addClass} ${p.className}`
+        const className = `muk-icon m--deviantart ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconDeviantart extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M31.4 6.8l-6.8 13 .5.6h6.3v9.3H20l-.9.7-3.2 6.1-.7.6H8.5v-6.7l6.8-13-.6-.7H8.5V7.4h11.3l1-.6L24 .7l.6-.7h6.8v6.8z"></path></g>
+                        <g className={`m-group`}><path d="M31.4 6.8l-6.8 13 .5.6h6.3v9.3H20l-.9.7-3.2 6.1-.7.6H8.5v-6.7l6.8-13-.6-.7H8.5V7.4h11.3l1-.6L24 .7l.6-.7h6.8v6.8z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

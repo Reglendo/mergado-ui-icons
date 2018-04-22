@@ -24,11 +24,11 @@ class IconSortAsc extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--sort-asc ${p.addClass} ${p.className}`
+        const className = `muk-icon m--sort-asc ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconSortAsc extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M31.4 15.7q0 .6-.5 1t-1 .4h-20q-.6 0-1-.4t-.4-1 .4-1l10-10q.4-.4 1-.4t1 .4l10 10q.5.4.5 1z"></path></g>
+                        <g className={`m-group`}><path d="M31.4 15.7q0 .6-.5 1t-1 .4h-20q-.6 0-1-.4t-.4-1 .4-1l10-10q.4-.4 1-.4t1 .4l10 10q.5.4.5 1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

@@ -24,11 +24,11 @@ class IconTwitch extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--twitch ${p.addClass} ${p.className}`
+        const className = `muk-icon m--twitch ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconTwitch extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M20 9.7v9.7h-3.2V9.7H20zm8.9 0v9.7h-3.3V9.7h3.3zm0 17l5.6-5.7V3.2H7.9v23.4h7.3v4.9l4.8-4.9h8.9zM37.8 0v22.6l-9.7 9.7h-7.3L16 37.1h-4.9v-4.8H2.2V6.5L4.7 0h33.1z"></path></g>
+                        <g className={`m-group`}><path d="M20 9.7v9.7h-3.2V9.7H20zm8.9 0v9.7h-3.3V9.7h3.3zm0 17l5.6-5.7V3.2H7.9v23.4h7.3v4.9l4.8-4.9h8.9zM37.8 0v22.6l-9.7 9.7h-7.3L16 37.1h-4.9v-4.8H2.2V6.5L4.7 0h33.1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

@@ -24,11 +24,11 @@ class IconCutlery extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--cutlery ${p.addClass} ${p.className}`
+        const className = `muk-icon m--cutlery ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconCutlery extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M18.8 1.4v14.3q0 1.4-.8 2.5t-2.1 1.6v17.3q0 1.2-.8 2.1t-2 .8h-2.9q-1.1 0-2-.8t-.8-2.1V19.8q-1.3-.5-2.1-1.6t-.8-2.5V1.4q0-.6.4-1t1-.4 1 .4.5 1v9.3q0 .6.4 1t1 .4 1-.4.4-1V1.4q0-.6.4-1t1-.4 1 .4.5 1v9.3q0 .6.4 1t1 .4 1-.4.4-1V1.4q0-.6.4-1t1.1-.4 1 .4.4 1zm17.1 0v35.7q0 1.2-.8 2.1t-2 .8h-2.9q-1.1 0-2-.8t-.8-2.1V25.7h-5q-.3 0-.5-.2t-.3-.5V7.1q0-2.9 2.1-5T28.8 0h5.7q.6 0 1 .4t.4 1z"></path></g>
+                        <g className={`m-group`}><path d="M18.8 1.4v14.3q0 1.4-.8 2.5t-2.1 1.6v17.3q0 1.2-.8 2.1t-2 .8h-2.9q-1.1 0-2-.8t-.8-2.1V19.8q-1.3-.5-2.1-1.6t-.8-2.5V1.4q0-.6.4-1t1-.4 1 .4.5 1v9.3q0 .6.4 1t1 .4 1-.4.4-1V1.4q0-.6.4-1t1-.4 1 .4.5 1v9.3q0 .6.4 1t1 .4 1-.4.4-1V1.4q0-.6.4-1t1.1-.4 1 .4.4 1zm17.1 0v35.7q0 1.2-.8 2.1t-2 .8h-2.9q-1.1 0-2-.8t-.8-2.1V25.7h-5q-.3 0-.5-.2t-.3-.5V7.1q0-2.9 2.1-5T28.8 0h5.7q.6 0 1 .4t.4 1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

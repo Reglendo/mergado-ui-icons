@@ -24,11 +24,11 @@ class IconLocationArrow extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--location-arrow ${p.addClass} ${p.className}`
+        const className = `muk-icon m--location-arrow ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconLocationArrow extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M35.8 7.8L21.5 36.4q-.4.7-1.3.7h-.3q-.5-.1-.8-.5t-.3-.9V22.9H5.9q-.5 0-.9-.3t-.5-.8.1-1 .7-.6L33.9 5.9q.2-.2.6-.2.6 0 1 .4.3.4.4.8t-.1.9z"></path></g>
+                        <g className={`m-group`}><path d="M35.8 7.8L21.5 36.4q-.4.7-1.3.7h-.3q-.5-.1-.8-.5t-.3-.9V22.9H5.9q-.5 0-.9-.3t-.5-.8.1-1 .7-.6L33.9 5.9q.2-.2.6-.2.6 0 1 .4.3.4.4.8t-.1.9z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

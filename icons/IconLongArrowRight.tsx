@@ -24,11 +24,11 @@ class IconLongArrowRight extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--long-arrow-right ${p.addClass} ${p.className}`
+        const className = `muk-icon m--long-arrow-right ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconLongArrowRight extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M39.1 19.9q0 .3-.3.6l-8.5 7.9q-.4.3-.8.1-.4-.2-.4-.6v-5H1.2q-.3 0-.5-.2t-.2-.6v-4.2q0-.4.2-.6t.5-.2h27.9v-5q0-.4.4-.6t.8.1l8.5 7.8q.3.2.3.5z"></path></g>
+                        <g className={`m-group`}><path d="M39.1 19.9q0 .3-.3.6l-8.5 7.9q-.4.3-.8.1-.4-.2-.4-.6v-5H1.2q-.3 0-.5-.2t-.2-.6v-4.2q0-.4.2-.6t.5-.2h27.9v-5q0-.4.4-.6t.8.1l8.5 7.8q.3.2.3.5z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

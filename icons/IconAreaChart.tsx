@@ -24,11 +24,11 @@ class IconAreaChart extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--area-chart ${p.addClass} ${p.className}`
+        const className = `muk-icon m--area-chart ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconAreaChart extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M39.8 32.4v2.5H0V5.1h2.5v27.3h37.3zm-7.5-19.9l5 17.4H5V18.8l8.7-11.2 11.1 11.2z"></path></g>
+                        <g className={`m-group`}><path d="M39.8 32.4v2.5H0V5.1h2.5v27.3h37.3zm-7.5-19.9l5 17.4H5V18.8l8.7-11.2 11.1 11.2z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

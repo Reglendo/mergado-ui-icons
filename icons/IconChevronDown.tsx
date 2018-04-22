@@ -24,11 +24,11 @@ class IconChevronDown extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon ${name}--chevron-down ${p.addClass} ${p.className}`
+        const className = `muk-icon m--chevron-down ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={`muk-icon__image`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={`m-image`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -36,7 +36,7 @@ class IconChevronDown extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g><path d="M37.6 18L21 34.6q-.4.4-1 .4t-1-.4L2.4 18q-.4-.4-.4-1t.4-1l3.7-3.7q.5-.4 1-.4t1 .4L20 24.2l11.9-11.9q.4-.4 1-.4t1 .4l3.7 3.7q.4.4.4 1t-.4 1z"></path></g>
+                        <g className={`m-group`}><path d="M37.6 18L21 34.6q-.4.4-1 .4t-1-.4L2.4 18q-.4-.4-.4-1t.4-1l3.7-3.7q.5-.4 1-.4t1 .4L20 24.2l11.9-11.9q.4-.4 1-.4t1 .4l3.7 3.7q.4.4.4 1t-.4 1z"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>

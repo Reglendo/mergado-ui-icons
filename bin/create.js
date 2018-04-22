@@ -82,11 +82,11 @@ class ${name} extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={\`muk-icon__text\`}>{p.text}</span> : false
-        const className = \`muk-icon \${name}--${id} \${p.addClass} \${p.className}\`
+        const className = \`muk-icon m--${id} \${p.className || \"\"}\`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
-                    <svg className={\`muk-icon__image\`} preserveAspectRatio='xMidYMid meet'
+                    <svg className={\`m-image\`} preserveAspectRatio='xMidYMid meet'
                         fill={p.color}
                         stroke={p.color}
                         strokeWidth={0}
@@ -94,7 +94,7 @@ class ${name} extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g>${iconSvg}</g>
+                        <g className={\`m-group\`}>${iconSvg}</g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>
