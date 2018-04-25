@@ -12,7 +12,7 @@ export interface Props {
     className?: string;
 }
 declare class IconGooglePlus extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate(nextProps: any): any;
+    shouldComponentUpdate(nextProps: any): boolean;
     static defaultProps: Props;
     render(): JSX.Element;
 }

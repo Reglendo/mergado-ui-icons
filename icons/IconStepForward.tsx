@@ -1,6 +1,5 @@
 
 import * as React from "react"
-import shallowCompare from "shallow-compare"
 export interface Props { 
     size?: number 
     text?: string 
@@ -14,7 +13,7 @@ export interface Props {
 }
 
 class IconStepForward extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate(nextProps) { return shallowCompare(this,this.props,nextProps) }
+    shouldComponentUpdate(nextProps) { return false }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",
@@ -24,7 +23,7 @@ class IconStepForward extends React.PureComponent<Props, {}> {
         const p = this.props
         const name = "muk-icon";
         const textEl = p.text ? <span className={`muk-icon__text`}>{p.text}</span> : false
-        const className = `muk-icon m--step-forward ${p.className || ""}`
+        const className = `muk-icon muk-icon--step-forward ${p.className || ""}`
         return (
                 <span className={className} style={p.style} title={p.title}>
                     {p.textFirst && textEl }
