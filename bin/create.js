@@ -60,7 +60,7 @@ glob(rootDir + '/src/icons/*/*.svg', function(err, icons) {
 import * as React from "react"
 export interface Props { 
     size?: number 
-    text?: string 
+    text?: string | Element
     title?: string 
     style?: any 
     addClass?: string 
