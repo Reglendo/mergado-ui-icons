@@ -575,6 +575,7 @@ export { default as IconTarget1 } from './icons/IconTarget1';
 export { default as IconTarget2 } from './icons/IconTarget2';
 export { default as IconTarget3 } from './icons/IconTarget3';
 export { default as IconTarget4 } from './icons/IconTarget4';
+export { default as IconTargetPosition } from './icons/IconTargetPosition';
 export { default as IconTasks } from './icons/IconTasks';
 export { default as IconTelevision } from './icons/IconTelevision';
 export { default as IconTencentWeibo } from './icons/IconTencentWeibo';
