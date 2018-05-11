@@ -13,7 +13,7 @@ export interface Props {
 }
 
 class IconClipboard extends React.PureComponent<Props, {}> {
-    shouldComponentUpdate(nextProps) { return false }
+    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",
