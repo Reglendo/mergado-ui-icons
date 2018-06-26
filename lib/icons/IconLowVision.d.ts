@@ -11,7 +11,7 @@ export interface Props {
     textFirst?: boolean;
     className?: string;
 }
-declare class IconLowVision extends React.PureComponent<Props, {}> {
+declare class IconLowVision extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps: any): boolean;
     static defaultProps: Props;
     render(): JSX.Element;

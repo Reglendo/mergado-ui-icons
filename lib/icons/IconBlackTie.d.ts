@@ -11,7 +11,7 @@ export interface Props {
     textFirst?: boolean;
     className?: string;
 }
-declare class IconBlackTie extends React.PureComponent<Props, {}> {
+declare class IconBlackTie extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps: any): boolean;
     static defaultProps: Props;
     render(): JSX.Element;

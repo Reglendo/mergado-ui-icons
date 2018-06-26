@@ -12,7 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconBlind extends React.PureComponent<Props, {}> {
+class IconBlind extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,

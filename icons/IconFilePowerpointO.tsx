@@ -12,7 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconFilePowerpointO extends React.PureComponent<Props, {}> {
+class IconFilePowerpointO extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,

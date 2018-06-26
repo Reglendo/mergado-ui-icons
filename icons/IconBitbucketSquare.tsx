@@ -12,7 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconBitbucketSquare extends React.PureComponent<Props, {}> {
+class IconBitbucketSquare extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,

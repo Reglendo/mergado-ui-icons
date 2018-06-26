@@ -11,7 +11,7 @@ export interface Props {
     textFirst?: boolean;
     className?: string;
 }
-declare class IconJsfiddle extends React.PureComponent<Props, {}> {
+declare class IconJsfiddle extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps: any): boolean;
     static defaultProps: Props;
     render(): JSX.Element;

@@ -12,7 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconMedium extends React.PureComponent<Props, {}> {
+class IconMedium extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,

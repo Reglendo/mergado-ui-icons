@@ -12,7 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconFutbolO extends React.PureComponent<Props, {}> {
+class IconFutbolO extends React.Component<Props, {}> {
     shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
     public static defaultProps: Props = { 
         size: 15,
