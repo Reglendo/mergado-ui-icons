@@ -12,8 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconDashboard extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
+class IconDashboard extends React.PureComponent<Props, {}> {
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

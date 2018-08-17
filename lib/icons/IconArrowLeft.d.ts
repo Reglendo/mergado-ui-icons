@@ -11,8 +11,7 @@ export interface Props {
     textFirst?: boolean;
     className?: string;
 }
-declare class IconArrowLeft extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps: any): boolean;
+declare class IconArrowLeft extends React.PureComponent<Props, {}> {
     static defaultProps: Props;
     render(): JSX.Element;
 }

@@ -12,8 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconChain extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
+class IconChain extends React.PureComponent<Props, {}> {
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

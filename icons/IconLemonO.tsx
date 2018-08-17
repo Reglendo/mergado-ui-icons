@@ -12,8 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconLemonO extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
+class IconLemonO extends React.PureComponent<Props, {}> {
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

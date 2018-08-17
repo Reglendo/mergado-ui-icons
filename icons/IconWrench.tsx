@@ -12,8 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconWrench extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
+class IconWrench extends React.PureComponent<Props, {}> {
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

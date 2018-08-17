@@ -12,8 +12,7 @@ export interface Props {
     className?: string 
 }
 
-class IconRandom extends React.Component<Props, {}> {
-    shouldComponentUpdate(nextProps) { return this.props.text !== nextProps.text }
+class IconRandom extends React.PureComponent<Props, {}> {
     public static defaultProps: Props = { 
         size: 15,
         viewBox: "0 0 40 40",

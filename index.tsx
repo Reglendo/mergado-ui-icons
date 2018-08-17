@@ -660,3 +660,4 @@ export { default as IconYelp } from './icons/IconYelp';
 export { default as IconYoutubePlay } from './icons/IconYoutubePlay';
 export { default as IconYoutubeSquare } from './icons/IconYoutubeSquare';
 export { default as IconYoutube } from './icons/IconYoutube';
+export { default as IconZboziCz } from './icons/IconZboziCz';
