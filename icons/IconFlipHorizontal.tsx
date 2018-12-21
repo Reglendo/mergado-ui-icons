@@ -34,7 +34,7 @@ class IconFlipHorizontal extends React.PureComponent<Props, {}> {
                         width={p.size}
                         viewBox={p.viewBox}
                     >
-                        <g className={`m-group`}><path style={{"lineHeight":"normal","fontVariantLigatures":"normal","fontVariantPosition":"normal","fontVariantCaps":"normal","fontVariantNumeric":"normal","fontVariantAlternates":"normal","fontFeatureSettings":"normal","textIndent":0,"textAlign":"start","textDecorationLine":"none","textDecorationStyle":"solid","textDecorationColor":"#000","textTransform":"none","textOrientation":"mixed","isolation":"auto","mixBlendMode":"normal"}} d="M38.064 34.07l-.636-1.047L20.932 5.93v28.14zm-2.449-1.377H22.31V10.836zM19.068 5.93l-1.562 2.564L1.936 34.07h17.132z" overflow="visible" color="#000"></path></g>
+                        <g className={`m-group`}><path d="M38.064 34.07l-.636-1.047L20.932 5.93v28.14zm-2.449-1.377H22.31V10.836zM19.068 5.93l-1.562 2.564L1.936 34.07h17.132z" color="#000"></path></g>
                     </svg>
                     {!p.textFirst && textEl }
                 </span>
